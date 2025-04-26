@@ -1,0 +1,12 @@
+.env
+/spacy-env
+spacy-env/*
+main.py
+/utils/
+utils/*
+/records/
+records/*
+output/*
+/output/
+data/*
+/data/

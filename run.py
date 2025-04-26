@@ -1,532 +1,832 @@
+# Create a new file, e.g., clinical_analyzer.py
+
 import logging
 import re
+from typing import Dict, List, Optional, Union, Any
 import spacy
 from spacy import displacy
-from spacy.matcher import PhraseMatcher
+# PhraseMatcher might not be needed for the core extraction class
+# from spacy.matcher import PhraseMatcher
 from spacy.tokens import Span
 import torch
-import medspacy # Keep medspacy for ConText
+import medspacy
+# Ensure necessary spaCy models are downloaded if needed (e.g., en_core_web_sm or md, en_ner_bc5cdr_md)
+# import spacy.cli
+# try:
+#     spacy.load("en_ner_bc5cdr_md")
+# except OSError:
+#     logging.info("Downloading en_ner_bc5cdr_md model...")
+#     spacy.cli.download("en_ner_bc5cdr_md")
+# try:
+#      spacy.load("en_core_web_sm") # Often needed for sentencizer/parser/tagger if not in the clinical model
+# except OSError:
+#      logging.info("Downloading en_core_web_sm model...")
+#      spacy.cli.download("en_core_web_sm")
+
 import os
-import scispacy # Import scispacy (good practice, though loading does the work)
-from medspacy.visualization import visualize_dep # <--- IMPORT THIS
+import scispacy
+from medspacy.visualization import visualize_dep
 import pandas as pd
 
+# Configure logging (can be configured by the main application instead)
+# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+class ClinicalTextAnalyzer:
+    """
+    A class to load clinical NLP models and perform analysis tasks like
+    negation detection, affirmed finding extraction, and token analysis.
+    """
 
-# Simplified GPU check (Keep as before)
-def is_gpu_available():
-    """Checks and logs GPU availability."""
-    gpu_id = -1
-    try:
-        if torch.cuda.is_available():
-            if spacy.prefer_gpu():
+    def __init__(self, model_name="en_ner_bc5cdr_md"):
+        """
+        Initializes the analyzer by loading the specified spaCy/scispaCy model
+        and adding necessary components like MedspaCy context.
+
+        Args:
+            model_name (str): The name of the spaCy/scispaCy model to load.
+                              Defaults to "en_ner_bc5cdr_md".
+        """
+        self.model_name = model_name
+        self.nlp = None # Initialize to None
+        # Load pipeline during init
+        self._load_pipeline(self.model_name)
+
+        if self.nlp is None:
+            # Handle initialization failure more robustly
+            raise RuntimeError(f"Failed to load NLP pipeline for model '{model_name}'")
+
+        # Define keywords for categorization heuristics
+        # These are used if no entities are detected or entity context isn't clear
+        self.negation_keywords = ["no", "not", "without", "negative for"]
+        self.normal_keywords = [
+            "normal", "intact", "clear", "moist", "warm", "dry", "soft",
+            "appropriate", "well", "equal", "symmetric", "unremarkable",
+            "nontender", "non-tender" # Add common PE descriptors
+        ]
+
+
+    def _check_gpu(self):
+        """Checks and logs GPU availability."""
+        gpu_id = -1
+        try:
+            if torch.cuda.is_available() and spacy.prefer_gpu():
                 try:
-                     current_device_id = torch.cuda.current_device()
-                     gpu_name = torch.cuda.get_device_name(current_device_id)
-                     logging.info(f"spaCy utilizing GPU (ID: {current_device_id}) - {gpu_name}")
-                     return True, current_device_id
+                    current_device_id = torch.cuda.current_device()
+                    gpu_name = torch.cuda.get_device_name(current_device_id)
+                    logging.info(f"ClinicalTextAnalyzer using GPU (ID: {current_device_id}) - {gpu_name}")
+                    return True, current_device_id
                 except Exception as e:
-                     logging.warning(f"spacy.prefer_gpu() succeeded, but couldn't confirm device via torch: {e}")
-                     return True, 0 # Placeholder ID
+                    # This can happen if spacy.prefer_gpu() succeeds but torch can't see the device
+                    logging.warning(f"spacy.prefer_gpu() succeeded, but couldn't confirm device via torch: {e}")
+                    return True, 0 # Assume device 0 if prefer_gpu succeeded
             else:
-                logging.info("spacy.prefer_gpu() returned False. Using CPU.")
+                logging.info("ClinicalTextAnalyzer using CPU.")
                 spacy.require_cpu()
                 return False, -1
-        else:
-            logging.info("No CUDA GPU available via torch. Using CPU.")
+        except Exception as e:
+            logging.error(f"Error during GPU check: {e}")
+            logging.info("Falling back to CPU.")
             spacy.require_cpu()
             return False, -1
-    except Exception as e:
-        logging.error(f"Error during GPU check: {e}")
-        logging.info("Falling back to CPU.")
-        spacy.require_cpu()
-        return False, -1
 
+    def _load_pipeline(self, model_name):
+        """Loads the spaCy pipeline and adds MedspaCy components."""
+        logging.info(f"Attempting to load spaCy model: {model_name}...")
+        self._check_gpu() # Check GPU status during loading
+        try:
+            # First, try loading the specified model
+            nlp = spacy.load(model_name)
+            logging.info(f"Base model '{model_name}' loaded with components: {nlp.pipe_names}")
 
-# Pipeline loading function - MODIFIED to handle sciSpacy better
-def load_spacy_pipeline_medspacy_std(model_name="en_core_sci_lg"): # <-- Default changed
-    """Loads a spaCy model (recommend scispaCy for clinical) and adds MedspaCy ConTextComponent."""
-    logging.info(f"Loading spaCy model: {model_name}...")
-    try:
-        # Load the spaCy/scispaCy model
-        nlp = spacy.load(model_name)
-        logging.info(f"Base model '{model_name}' loaded with components: {nlp.pipe_names}")
-
-        # Add sentencizer if not present (good practice)
-        if 'sentencizer' not in nlp.pipe_names:
-            # Check if parser exists, add sentencizer before it if so
-            if 'parser' in nlp.pipe_names:
-                 logging.info("Adding 'sentencizer' pipe before parser.")
-                 nlp.add_pipe("sentencizer", before="parser")
+            # Add sentencizer if not present (crucial for medspaCy context)
+            if 'sentencizer' not in nlp.pipe_names:
+                if 'parser' in nlp.pipe_names:
+                    # Add before parser if parser exists
+                    nlp.add_pipe("sentencizer", before="parser")
+                else:
+                    # Otherwise add first
+                    nlp.add_pipe("sentencizer", first=True)
+                logging.info("Added 'sentencizer' pipe.")
             else:
-                 logging.info("Adding 'sentencizer' pipe first.")
-                 nlp.add_pipe("sentencizer", first=True)
+                 logging.info("'sentencizer' already in pipeline.")
 
 
-        # Add medspacy_context AFTER the NER component
-        logging.info("Adding 'medspacy_context' pipe...")
-        if 'ner' in nlp.pipe_names:
-            nlp.add_pipe("medspacy_context", after="ner")
-            logging.info("Added 'medspacy_context' pipe after NER.")
-        else:
-            # This case is less likely with standard models but handles edge cases
-            logging.warning("NER component not found in the pipeline. Adding 'medspacy_context' last.")
-            nlp.add_pipe("medspacy_context", last=True)
+            # Add medspaCy context component if not present
+            if "medspacy_context" not in nlp.pipe_names:
+                logging.info("Adding 'medspacy_context' pipe...")
+                # Typically added after NER if NER is present
+                if 'ner' in nlp.pipe_names:
+                    nlp.add_pipe("medspacy_context", after="ner")
+                    logging.info("Added 'medspacy_context' pipe after NER.")
+                else:
+                    # Add last if NER is not present
+                    nlp.add_pipe("medspacy_context", last=True)
+                    logging.warning("NER component not found. Added 'medspacy_context' last.")
 
-        # Verify medspacy_context was added
-        if "medspacy_context" not in nlp.pipe_names:
-             logging.error("'medspacy_context' pipe was not successfully added! Negation detection will fail.")
-             # You might want to raise an error or return None here
-        else:
-             logging.info("Verified 'medspacy_context' is in the pipeline.")
+                if "medspacy_context" not in nlp.pipe_names:
+                    logging.error("'medspacy_context' pipe could not be added!")
+                    self.nlp = None # Ensure self.nlp is None on failure
+                    return
+                else:
+                    logging.info("Verified 'medspacy_context' is in the pipeline.")
+            else:
+                 logging.info("'medspacy_context' already in pipeline.")
 
-        logging.info(f"Final pipeline: {nlp.pipe_names}")
-        return nlp
+            logging.info(f"Final pipeline for '{model_name}': {nlp.pipe_names}")
+            self.nlp = nlp # Assign loaded pipeline to instance variable
 
-    except OSError as e:
-        logging.error(f"Model '{model_name}' loading failed: {e}.")
-        logging.error(f"Ensure the model is installed (e.g., pip install <URL_for_{model_name}>) and the model name is correct.")
-        return None
-    except Exception as e:
-        logging.error(f"An unexpected error occurred during pipeline setup: {e}")
-        return None
+        except OSError as e:
+            logging.error(f"Model '{model_name}' loading failed: {e}.")
+            logging.info(f"Attempting to load 'en_core_web_sm' as a fallback...")
+            # Try loading a smaller model if the clinical one fails
+            try:
+                 nlp = spacy.load("en_core_web_sm")
+                 logging.info("Fallback model 'en_core_web_sm' loaded.")
 
-# get_entity_options function (Keep as before - add scispaCy entities if needed)
-def get_entity_options():
-    """Returns configuration for displaCy NER visualization."""
-    # Combine standard entities with potential scispaCy entities
-    # Check the specific scispaCy model's documentation for its entity labels
-    # Example common scispaCy entities: ENTITY (generic), DISEASE, CHEMICAL
-    entities = ["ENTITY", "DISEASE", "CHEMICAL", # Common scispaCy
-                "PERSON", "ORG", "GPE", "DATE", "FAC", "LOC", "PRODUCT", "EVENT",
-                "WORK_OF_ART", "LAW", "LANGUAGE", "TIME", "PERCENT", "MONEY",
-                "QUANTITY", "ORDINAL", "CARDINAL",
-                "NEG_ENTITY"] # Your custom negation label
-    colors = {
-        "NEG_ENTITY": 'linear-gradient(90deg, #ffff66, #ff6600)', # Keep your negation color
-        "PERSON": "linear-gradient(90deg, #ff9999, #ff6666)",
-        "DISEASE": "linear-gradient(90deg, #66ccff, #3399ff)", # Example color for DISEASE
-        "CHEMICAL": "linear-gradient(90deg, #ccff99, #99cc66)" # Example color for CHEMICAL
-        # Add other colors as needed
-    }
-    options = {"ents": entities, "colors": colors}
-    return options
+                 # Add sentencizer if not present
+                 if 'sentencizer' not in nlp.pipe_names:
+                      nlp.add_pipe("sentencizer", first=True)
+                      logging.info("Added 'sentencizer' pipe to fallback model.")
 
-# create_neg_matcher function (Keep as before)
-def create_neg_matcher(nlp, negated_entity_texts):
-    """Creates a PhraseMatcher for explicitly found negated entity texts."""
-    matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
-    patterns = [nlp.make_doc(text) for text in negated_entity_texts if text]
-    if patterns:
-        matcher.add("NEG_ENTITY", patterns)
-        logging.info(f"Created PhraseMatcher for {len(negated_entity_texts)} negated entity texts.")
-    else:
-        logging.info("No valid negated entity texts provided to create matcher.")
-    return matcher
+                 # Add medspaCy context component (without NER, will use default rules)
+                 if "medspacy_context" not in nlp.pipe_names:
+                      nlp.add_pipe("medspacy_context", last=True)
+                      logging.info("Added 'medspacy_context' pipe to fallback model.")
 
-# relabel_negated_entities function (Keep as before)
-def relabel_negated_entities(doc, matcher, nlp):
-    """Relabels entities matched by the PhraseMatcher as NEG_ENTITY."""
-    matches = matcher(doc)
-    if not matches:
-        # If no phrase matches, return the doc as is (medspacy attributes are still there)
-        logging.info("No phrase matches found for relabeling.")
-        # We still want to potentially visualize the original doc with medspacy negations
-        # So let's keep the original ents from the doc processed by medspacy
-        return doc # Return doc with original ents (which have ._.is_negated)
+                 logging.info(f"Final pipeline for 'en_core_web_sm' fallback: {nlp.pipe_names}")
+                 self.nlp = nlp # Assign fallback pipeline
+                 self.model_name = "en_core_web_sm (fallback)"
+                 logging.warning(f"Using fallback model '{self.model_name}' as '{model_name}' could not be loaded.")
 
-    spans_to_relabel = []
-    matched_texts = set()
-    for match_id, start, end in matches:
-        # Ensure the label is a string (spaCy expects string labels for Span)
-        label_str = nlp.vocab.strings[match_id]
-        span = Span(doc, start, end, label=label_str) # Use the string label
-        if span.text not in matched_texts:
-            spans_to_relabel.append(span)
-            matched_texts.add(span.text)
-
-    original_ents = list(doc.ents)
-    filtered_orig_ents = []
-    for ent in original_ents:
-        overlaps = False
-        for neg_span in spans_to_relabel:
-            # Check for overlap
-            if (ent.start < neg_span.end and ent.end > neg_span.start):
-                overlaps = True
-                logging.debug(f"Entity '{ent.text}' ({ent.label_}) overlaps with NEG_ENTITY span '{neg_span.text}'. Removing original.")
-                break
-        if not overlaps:
-            filtered_orig_ents.append(ent)
-
-    # Combine the non-overlapping original entities with the new NEG_ENTITY spans
-    combined_spans = filtered_orig_ents + spans_to_relabel
-
-    # Filter for valid spans (handles potential duplicates or overlaps within the combined list)
-    # This is crucial as the relabeling might create overlapping spans if not careful
-    final_ents = spacy.util.filter_spans(combined_spans)
-
-    try:
-        # Create a *new* doc to avoid modifying the original doc's entities
-        # OR modify in place carefully if memory is a concern
-        # For simplicity here, let's try modifying in place, but beware of side effects
-        # If issues arise, creating a copy is safer: doc_copy = doc[:] # shallow copy
-        doc.ents = final_ents
-        logging.info(f"Relabeled entities. Original count: {len(original_ents)}, Final count: {len(doc.ents)}")
-    except ValueError as e:
-        logging.error(f"Error setting doc.ents after filtering/relabeling: {e}.")
-        logging.warning("Falling back to original entities from medspacy.")
-        # Revert to original ents if setting fails
-        doc.ents = tuple(original_ents)
-
-    return doc
-
-def remove_negated_entity_text(original_text, doc):
-    """
-    Removes text spans corresponding to negated entities from the original text.
-
-    Args:
-        original_text (str): The original text string.
-        doc (spacy.Doc): The processed spaCy Doc object containing entities
-                         with MedspaCy's ._.is_negated attribute.
-
-    Returns:
-        str: A new string with the negated entity text removed,
-             or the original string if no negated entities are found.
-    """
-    logging.info("Attempting to remove negated entity text...")
-    negated_spans_indices = []
-    for ent in doc.ents:
-        # Check if the entity is negated
-        if hasattr(ent._, 'is_negated') and ent._.is_negated:
-            negated_spans_indices.append((ent.start_char, ent.end_char, ent.text)) # Store text for logging
-
-    if not negated_spans_indices:
-        logging.info("No negated entities found to remove.")
-        return original_text
-
-    # Sort spans by start character index to process sequentially
-    negated_spans_indices.sort(key=lambda x: x[0])
-
-    logging.info(f"Found {len(negated_spans_indices)} negated spans to remove:")
-    for start, end, text in negated_spans_indices:
-        logging.info(f"  - Span: [{start}:{end}], Text: '{text}'")
+            except OSError as fallback_e:
+                 logging.error(f"Fallback model 'en_core_web_sm' also failed to load: {fallback_e}")
+                 logging.error("NLP pipeline setup failed.")
+                 self.nlp = None # Ensure self.nlp is None on complete failure
+            except Exception as fallback_e:
+                 logging.error(f"An unexpected error occurred during fallback pipeline setup: {fallback_e}")
+                 self.nlp = None
+        except Exception as e:
+            logging.error(f"An unexpected error occurred during pipeline setup: {e}")
+            self.nlp = None
 
 
-    kept_parts = []
-    last_end = 0
-    for start, end, _ in negated_spans_indices:
-        # Keep the text from the end of the last removed span up to the start of this one
-        if start > last_end: # Ensure we don't append empty strings if spans are adjacent
-             kept_parts.append(original_text[last_end:start])
-        # Update the position to skip the current negated span
-        last_end = end
+    def analyze(self, text: str) -> spacy.tokens.Doc | None:
+        """
+        Processes the input text using the loaded spaCy pipeline.
 
-    # Add the remaining part of the string after the last negated span
-    kept_parts.append(original_text[last_end:])
+        Args:
+            text (str): The text to analyze.
 
-    # Join the kept parts
-    filtered_text = "".join(kept_parts)
+        Returns:
+            spacy.tokens.Doc | None: The processed Doc object, or None if
+                                     the pipeline isn't loaded or text is empty/whitespace.
+        """
+        if not self.nlp:
+            logging.error("NLP pipeline is not loaded. Cannot analyze text.")
+            return None
+        if not text or not text.strip():
+             logging.debug("Skipping analysis for empty or whitespace text.")
+             return None
 
-    # Optional: Clean up extra whitespace potentially left by removals
-    filtered_text = re.sub(r'\s+', ' ', filtered_text).strip()
+        logging.debug(f"Analyzing text: '{text[:50]}...' with model '{self.model_name}'...")
+        try:
+             doc = self.nlp(text)
+             logging.debug("Text analysis complete.")
+             return doc
+        except Exception as e:
+             logging.error(f"Error during NLP analysis of text: {e}", exc_info=True)
+             return None
 
-    logging.info("Finished removing negated entity text.")
-    return filtered_text
 
-# --- New Function to Extract Affirmed Findings by System ---
-def extract_affirmed_findings_by_system(text, doc):
-    """
-    Identifies system sections and extracts affirmed entities within each section.
+    def get_affirmed_findings_by_system(self, doc: spacy.tokens.Doc, text: str) -> dict:
+        """
+        Identifies system sections in the original text using regex headers and
+        extracts affirmed entities from the Doc object within each section.
+        Note: This method is designed for header-based reports like ROS, not
+              the nested structure of the physical exam dictionary.
 
-    Args:
-        text (str): The original text string (e.g., ROS).
-        doc (spacy.Doc): The processed spaCy Doc with NER and MedspaCy context.
+        Args:
+            doc (spacy.tokens.Doc): The processed Doc object from analyze().
+            text (str): The original text string (needed for header detection).
 
-    Returns:
-        dict: A dictionary where keys are system names (str) and values are
-              lists of tuples `(entity_text, entity_label)` for affirmed entities.
-    """
-    logging.info("Extracting affirmed findings by system...")
-    findings = {}
+        Returns:
+            dict: A dictionary where keys are system names (str) and values are
+                  lists of tuples `(entity_text, entity_label)` for affirmed entities.
+                  Returns an empty dict if doc is None or no headers are found.
+        """
+        if doc is None:
+            logging.warning("Doc object is None. Cannot extract affirmed findings by system.")
+            return {}
 
-    # 1. Find System Headers using Regex
-    # This pattern looks for a newline, optional whitespace,
-    # capitalized words (potentially with slashes/hyphens), followed by a colon.
-    # It captures the system name (group 1).
-    header_pattern = re.compile(r"^\s*([A-Z][a-zA-Z/\-]+(?: [A-Z][a-zA-Z/\-]+)*):\s*", re.MULTILINE)
-    # header_pattern = re.compile(r"\n\s*([A-Z][a-zA-Z/\-]+):\s*") # Simpler alternative if names are single words
+        logging.info("Extracting affirmed findings by system using regex headers...")
+        findings = {}
+        header_pattern = re.compile(r"^\s*([A-Z][a-zA-Z/\-]+(?: [A-Z][a-zA-Z/\-]+)*):\s*", re.MULTILINE)
+        headers = []
 
-    headers = []
-    for match in header_pattern.finditer(text):
-        system_name = match.group(1).strip()
-        # Use end of the *match* as the start of the content for this section
-        content_start_char = match.end()
-        headers.append({"name": system_name, "start": match.start(), "content_start": content_start_char})
+        # Find all headers and their positions
+        for match in header_pattern.finditer(text):
+             system_name = match.group(1).strip()
+             content_start_char = match.end()
+             headers.append({"name": system_name, "start": match.start(), "content_start": content_start_char})
 
-    if not headers:
-        logging.warning("No system headers found using the defined pattern.")
-        # Optionally, process the whole doc as one section
-        # return {"UNCATEGORIZED": [(ent.text, ent.label_) for ent in doc.ents if hasattr(ent._, 'is_negated') and not ent._.is_negated]}
-        return {}
+        if not headers:
+            logging.warning("No system headers found in the text.")
+            return {} # Return empty if no headers
 
-    # Sort headers by their start position
-    headers.sort(key=lambda x: x["start"])
+        # Sort headers by start position to define sections
+        headers.sort(key=lambda x: x["start"])
+        text_end = len(text)
 
-    # Add a dummy end-marker for the last section
-    text_end = len(text)
+        # Filter affirmed entities from the doc
+        affirmed_entities = []
+        for ent in doc.ents:
+             # Check if medspaCy context attribute exists and entity is not negated
+             if hasattr(ent._, 'is_negated') and not ent._.is_negated:
+                  affirmed_entities.append({
+                      "text": ent.text,
+                      "label": ent.label_,
+                      "start_char": ent.start_char,
+                      "end_char": ent.end_char
+                  })
+             elif not hasattr(ent._, 'is_negated'):
+                  # If is_negated is not available (e.g., medspacy context not added),
+                  # assume affirmed for simplicity in this specific function's context.
+                  # In a real application, you might handle this differently.
+                  logging.warning(f"Entity '{ent.text}' has no 'is_negated' attribute. Assuming affirmed.")
+                  affirmed_entities.append({
+                       "text": ent.text,
+                       "label": ent.label_,
+                       "start_char": ent.start_char,
+                       "end_char": ent.end_char
+                  })
 
-    # 2. Get Affirmed Entities
-    affirmed_entities = []
-    for ent in doc.ents:
-        if hasattr(ent._, 'is_negated') and not ent._.is_negated:
-            # Store text, label, and character positions
-            affirmed_entities.append({
-                "text": ent.text,
-                "label": ent.label_,
-                "start_char": ent.start_char,
-                "end_char": ent.end_char
+
+        # Map affirmed entities to their respective sections
+        num_headers = len(headers)
+        for i, header in enumerate(headers):
+             system_name = header["name"]
+             section_content_start = header["content_start"]
+             # The section ends either at the start of the next header or the end of the text
+             section_content_end = headers[i+1]["start"] if i + 1 < num_headers else text_end
+
+             # Initialize list for this system if it doesn't exist
+             if system_name not in findings:
+                  findings[system_name] = []
+
+             # Add entities falling within this section's character range
+             for ent in affirmed_entities:
+                  # Check if the entity's span is fully contained within the section's content area
+                  if ent["start_char"] >= section_content_start and ent["end_char"] <= section_content_end:
+                       findings[system_name].append((ent["text"], ent["label"]))
+
+        # Remove systems with no findings
+        findings = {k: v for k, v in findings.items() if v}
+
+        logging.info("Finished mapping affirmed entities to systems.")
+        return findings
+
+
+    def get_token_analysis_df(self, doc: spacy.tokens.Doc) -> pd.DataFrame:
+        """
+        Analyzes each token in the Doc and returns attributes as a Pandas DataFrame.
+
+        Args:
+            doc (spacy.tokens.Doc): The processed Doc object from analyze().
+
+        Returns:
+            pd.DataFrame: DataFrame with token attributes. Returns empty DataFrame
+                          if doc is None.
+        """
+        if doc is None:
+            logging.warning("Doc object is None. Cannot create token analysis DataFrame.")
+            return pd.DataFrame()
+
+        logging.info("Analyzing token attributes for DataFrame...")
+        token_data = []
+        # Create a mapping from token index to its entity span for quick lookup
+        token_to_entity_map = {}
+        for span in doc.ents:
+             for i in range(span.start, span.end):
+                  token_to_entity_map[i] = span
+
+        for token in doc:
+            entity_span = token_to_entity_map.get(token.i)
+            entity_context = "N/A"
+            entity_text_in_span = ""
+
+            if entity_span:
+                 entity_text_in_span = entity_span.text
+                 # Check if medspaCy context attribute exists
+                 if hasattr(entity_span._, 'is_negated'):
+                      entity_context = "NEGATED" if entity_span._.is_negated else "AFFIRMED"
+                 else:
+                      entity_context = "CONTEXT_N/A" # Indicate context not available
+
+            token_data.append({
+                "TEXT": token.text,
+                "LEMMA": token.lemma_,
+                "POS": token.pos_,
+                "TAG": token.tag_,
+                "DEP": token.dep_,
+                "HEAD_TEXT": token.head.text, # Use HEAD_TEXT for clarity
+                "ENTITY_IOB": token.ent_iob_,
+                "ENTITY_TYPE": token.ent_type_ or "O",
+                "ENTITY_TEXT_SPAN": entity_text_in_span, # Add the full entity text
+                "ENTITY_CONTEXT": entity_context,
+                "IS_SPACE": token.is_space,
+                "TOKEN_IDX": token.i
             })
 
-    logging.info(f"Found {len(affirmed_entities)} affirmed entities.")
+        df = pd.DataFrame(token_data)
+        logging.info("Finished creating token analysis DataFrame.")
+        return df
 
-    # 3. Map Entities to Sections
-    num_headers = len(headers)
-    for i, header in enumerate(headers):
-        system_name = header["name"]
-        section_content_start = header["content_start"]
+    def _get_entity_options(self):
+        """Internal helper to get displaCy entity options."""
+        # Define colors for common entities or types you expect
+        # Ensure 'ents' list includes all relevant entity types from your model
+        entities = list(self.nlp.get_pipe('ner').labels) if self.nlp and 'ner' in self.nlp.pipe_names else ["ENTITY"]
+        # Add default spacy entities if they might be present
+        default_spacy_ents = ["PERSON", "ORG", "GPE", "LOC", "DATE", "TIME", "PERCENT", "MONEY", "QUANTITY", "ORDINAL", "CARDINAL"]
+        entities.extend([ent for ent in default_spacy_ents if ent not in entities])
 
-        # Determine the end of this section's content
-        if i + 1 < num_headers:
-            section_content_end = headers[i+1]["start"] # Ends where the next header begins
-        else:
-            section_content_end = text_end # Last section goes to the end of the text
+        colors = {
+            "DISEASE": "linear-gradient(90deg, #ff9999, #ff6666)", # Example color
+            "CHEMICAL": "linear-gradient(90deg, #ccff99, #99cc66)", # Example color
+            "SIGN": "linear-gradient(90deg, #ffff99, #cccc66)", # Example color for clinical signs
+            "SYMPTOM": "linear-gradient(90deg, #99ccff, #6699cc)", # Example color for symptoms
+             # Add colors for other important entity types if needed
+        }
+        # You might want to add default colors for entity types not explicitly listed
+        # using a generic palette or hash function. For now, let's stick to explicit ones.
 
-        logging.debug(f"Processing section: '{system_name}' ({section_content_start}-{section_content_end})")
-        findings[system_name] = []
+        return {"ents": entities, "colors": colors}
 
-        for ent in affirmed_entities:
-            # Check if the entity falls within the character span of this section's content
-            if ent["start_char"] >= section_content_start and ent["end_char"] <= section_content_end:
-                logging.debug(f"  - Matched affirmed entity: '{ent['text']}' ({ent['label']})")
-                findings[system_name].append((ent["text"], ent["label"]))
+    def save_entity_visualization(self, doc: spacy.tokens.Doc, output_path: str):
+        """Saves the spaCy entity visualization to an HTML file."""
+        if doc is None:
+            logging.warning("Doc object is None. Cannot save entity visualization.")
+            return
 
-    logging.info("Finished mapping affirmed entities to systems.")
-    # Filter out systems with no affirmed findings
-    return {k: v for k, v in findings.items() if v}
+        logging.info(f"Saving entity visualization to {output_path}...")
+        try:
+            options = self._get_entity_options()
+            html = displacy.render(doc, style='ent', options=options, page=True)
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(html)
+            logging.info("Entity visualization saved.")
+        except Exception as e:
+            logging.error(f"Failed to save entity visualization to {output_path}: {e}")
 
-def generate_visual(ros_doc):
-    # --- Visualizations (Optional) ---
-    # --- Visualizations (Optional) ---
-    # (Keep the visualization code as before if desired)
-    print("\n--- Visualization: Entities Only ---")
-    print("(Check ros_visualization_entities_only.html)")
-    options_ent = get_entity_options()
-    html_ent = displacy.render(ros_doc, style='ent', options=options_ent, page=True)
-    output_path_ent = "ros_visualization_entities_only.html"
-    try:
-        with open(output_path_ent, "w", encoding="utf-8") as f:
-            f.write(html_ent)
-        logging.info(f"Entity-only visualization saved to {output_path_ent}")
-    except Exception as e:
-        logging.error(f"Failed to save entity-only visualization: {e}")
 
-# --- MODIFIED Function to Analyze Token Attributes (Returns DataFrame) ---
-def analyze_token_attributes(doc):
-    """
-    Iterates through tokens in a Doc, extracts attributes, and returns
-    them as a Pandas DataFrame.
+    def save_context_visualization(self, doc: spacy.tokens.Doc, output_path: str):
+        """Saves the MedspaCy context visualization to an HTML file."""
+        if doc is None:
+            logging.warning("Doc object is None. Cannot save context visualization.")
+            return
 
-    Args:
-        doc (spacy.Doc): The processed spaCy Doc object.
+        logging.info(f"Saving context visualization to {output_path}...")
+        try:
+            # medspaCy's visualize_dep requires specific dependencies and might not
+            # work universally depending on spacy version/installation.
+            # We added an ImportError check earlier.
+            html = visualize_dep(doc) # This function generates the HTML directly
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(html)
+            logging.info("Context visualization saved.")
+        except ImportError:
+            logging.error("Failed to import medspacy.visualization. visualize_dep not available.")
+        except Exception as e:
+            logging.error(f"Failed to save context dependency visualization to {output_path}: {e}")
 
-    Returns:
-        pandas.DataFrame: A DataFrame containing token attributes.
-    """
-    logging.info("Analyzing token attributes for DataFrame...")
-
-    token_data = [] # List to hold data for each token
-
-    # Pre-build a map from token index to its entity span
-    token_to_entity_map = {}
-    for entity_span in doc.ents:
-        for i in range(entity_span.start, entity_span.end):
-            token_to_entity_map[i] = entity_span
-
-    # Iterate through each token
-    for token in doc:
-        # Basic spaCy attributes
-        text = token.text
-        lemma = token.lemma_
-        pos = token.pos_
-        tag = token.tag_
-        dep = token.dep_
-        head = token.head.text
-        is_space = token.is_space # Good to know if it's just whitespace
-
-        # Entity information (NER)
-        ent_type = token.ent_type_ or "O"
-        ent_iob = token.ent_iob_
-
-        # MedspaCy Context
-        entity_context = "N/A"
-        entity_span = token_to_entity_map.get(token.i)
-        if entity_span:
-            if hasattr(entity_span._, 'is_negated'):
-                entity_context = "NEGATED" if entity_span._.is_negated else "AFFIRMED"
-
-        # Add data for this token to the list
-        token_data.append({
-            "TEXT": text,
-            "LEMMA": lemma,
-            "POS": pos,
-            "TAG": tag,
-            "DEP": dep,
-            "HEAD": head,
-            "ENTITY_IOB": ent_iob,
-            "ENTITY_TYPE": ent_type,
-            "ENTITY_CONTEXT": entity_context,
-            "IS_SPACE": is_space,
-            "TOKEN_IDX": token.i # Add token index for reference
-        })
-
-    # Create DataFrame
-    df = pd.DataFrame(token_data)
-    logging.info("Finished analyzing token attributes into DataFrame.")
-    return df
-
-# Main execution block - MODIFIED to call the new function
-def main():
-    logging.info("Script starting...")
-
-    gpu_available, gpu_id = is_gpu_available()
-    print(f"gpu_available: {gpu_available}")
-    print(f"GPU ID: {gpu_id}")
-
-    model_to_use = "en_ner_bc5cdr_md" # Using the robust clinical model
-    nlp = load_spacy_pipeline_medspacy_std(model_name=model_to_use)
-    if nlp is None:
-        logging.error("Exiting due to NLP pipeline loading failure.")
-        exit()
-
-    ros = """
-        Review of Systems
-        HENT: Negative for facial swelling and nosebleeds.
-        Eyes: Negative for photophobia and visual disturbance.
-        Respiratory: Negative for shortness of breath.
-        Cardiovascular: Negative for chest pain.
-        Gastrointestinal: Negative for nausea and vomiting.
-        Genitourinary: Negative for flank pain and hematuria.
-        Musculoskeletal: Positive for arthralgias (left arm pain). Negative for back pain and neck pain.
-            Left lateral trapezius pain with radiation down left arm
-        Skin: Negative for wound.
-        Neurological: Positive for numbness. Negative for dizziness, syncope, weakness and headaches.
-        Psychiatric/Behavioral: Negative for confusion.
-    """
-
-    # --- Processing ROS ---
-    print("\n--- Processing Review of Systems (ROS) ---")
-    logging.info(f"Running ROS through {model_to_use} NER and Context pipeline...")
-    ros_doc = nlp(ros) # Process the original ROS text
-
-    # --- Extract Negated Entities using MedspaCy ---
-    # (Keep the detailed printout section as before for diagnosis)
-    print("\nEntities found by NER and their negation status (via MedspaCy):")
-    ros_negated_entities = []
-    ros_affirmed_entities = []
-    has_negation_info = False
-    if not ros_doc.ents:
-         print(" - No entities identified by the NER model.")
-    else:
-        for ent in ros_doc.ents:
-            negation_status = "UNKNOWN"
-            is_negated = False
-            if hasattr(ent._, 'is_negated'):
-                has_negation_info = True
-                if ent._.is_negated:
-                    negation_status = "NEGATED"
-                    ros_negated_entities.append(ent)
-                    is_negated = True
-                else:
-                    negation_status = "AFFIRMED"
-                    ros_affirmed_entities.append(ent)
-            elif hasattr(ent._, 'context_attributes'):
-                 if 'is_negated' in ent._.context_attributes and ent._.context_attributes['is_negated']:
-                      has_negation_info = True
-                      negation_status = "NEGATED"
-                      ros_negated_entities.append(ent)
-                      is_negated = True
-                 else:
-                      has_negation_info = True
-                      negation_status = "AFFIRMED"
-                      ros_affirmed_entities.append(ent)
-            print(f"- '{ent.text}' (Label: {ent.label_}, Start: {ent.start_char}, End: {ent.end_char}, Negation: {negation_status})")
-        if not has_negation_info:
-             logging.warning("MedspaCy context attributes not found. Check pipeline.")
-
-    # --- Print Summary of Negated Entities ---
-    print("\nSummary: Negated Entities identified by MedspaCy:")
-    if ros_negated_entities:
-         for ent in ros_negated_entities:
-            print(f"- {ent.text} (Original Label: {ent.label_})")
-    else:
-        print(" - None identified.")
-
-    # --- Processing ROS ---
-    print("\n--- Processing Review of Systems (ROS) ---")
-    logging.info(f"Running ROS through {model_to_use} NER and Context pipeline...")
-    ros_doc = nlp(ros)
-
-    # --- Extract and Print Affirmed Findings by System ---
-    print("\n--- Extracting Affirmed Findings by System ---")
-    affirmed_by_system = extract_affirmed_findings_by_system(ros, ros_doc)
-
-    if affirmed_by_system:
-        print("\nAffirmed Findings Summary:")
-        print("-" * 30)
-        for system, findings_list in affirmed_by_system.items():
-            print(f"System: {system}")
-            if findings_list:
-                for entity_text, entity_label in findings_list:
-                    print(f"  - {entity_text} ({entity_label})")
+    def _add_to_nested_dict(self, nested_dict: Dict[str, Any], path: List[str], value: str):
+        """
+        Helper to add a value (string) to a nested dictionary structure,
+        creating dictionaries or lists as needed along the path.
+        If the final path segment already exists, ensures it's a list and appends.
+        """
+        current = nested_dict
+        for i, segment in enumerate(path):
+            if i == len(path) - 1:
+                # This is the last segment, representing the key where the value should be stored.
+                # We want to store values as a list at this final key.
+                if segment not in current or not isinstance(current[segment], list):
+                    current[segment] = []
+                current[segment].append(value)
             else:
-                # This part might not be reached if empty lists are filtered out earlier
-                print("  (No affirmed findings detected in this section)")
-            print("-" * 10) # Separator between systems
-    else:
-        print("\nNo affirmed findings were extracted or associated with system headers.")
-
-    # --- Detailed Token Analysis into DataFrame ---
-    print("\n--- Analyzing Tokens into DataFrame ---")
-    token_df = analyze_token_attributes(ros_doc)
-
-    # --- Output the DataFrame ---
-    # Option 1: Print to console (might be wide)
-    # print("\nToken Analysis DataFrame (Console Output):")
-    # pd.set_option('display.max_rows', None) # Show all rows
-    # pd.set_option('display.max_columns', None) # Show all columns
-    # pd.set_option('display.width', 1000) # Try to increase width
-    # print(token_df)
-
-    # Option 2: Save to HTML (Recommended for viewing)
-    output_html_path = "token_analysis.html"
-    print(f"\nSaving Token Analysis DataFrame to HTML: {output_html_path}")
-    try:
-        # index=False prevents writing the DataFrame index as a column
-        token_df.to_html(output_html_path, index=False, border=1)
-        logging.info(f"DataFrame successfully saved to {output_html_path}")
-    except Exception as e:
-        logging.error(f"Failed to save DataFrame to HTML: {e}")
+                # Intermediate segment, needs to be a dictionary.
+                if segment not in current or not isinstance(current[segment], dict):
+                    current[segment] = {}
+                current = current[segment]
 
 
-    # generate html visualizer
-    # generate_visual(ros_doc)
-    
-    # --- Detailed Token Analysis --- ADDED THIS CALL
-    analyze_token_attributes(ros_doc)
-    
-    logging.info("Script finished.")
+    def analyze_physical_exam(self, physical_exam_data: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+        """
+        Traverses a nested dictionary representing a physical exam, analyzes
+        each string observation using NLP, and categorizes it as 'positive',
+        'negative', or 'normal'.
 
+        Uses medspaCy context detection and heuristic keyword matching for categorization.
+
+        Args:
+            physical_exam_data (Dict[str, Any]): The nested dictionary
+                structure of the physical exam. Leaves should be strings or lists of strings.
+
+        Returns:
+            Dict[str, Dict[str, Any]]: A dictionary with keys 'positive',
+                'negative', 'normal', each containing a nested dictionary
+                mirroring the input structure but only with the observations
+                categorized into that group.
+        """
+        logging.info("Analyzing physical exam data structure...")
+
+        positive_findings = {}
+        negative_findings = {}
+        normal_findings = {}
+        unknown_findings = {} # Optional: keep track of unclassified
+
+        # Use sets for faster keyword lookup after tokenization (optional, regex is fine too)
+        # negation_kw_set = set(self.negation_keywords)
+        # normal_kw_set = set(self.normal_keywords)
+
+        def _categorize_observation(text: str) -> str:
+            """Applies categorization logic to a single observation string."""
+            if not isinstance(text, str) or not text.strip():
+                 logging.debug("Skipping empty or non-string observation.")
+                 return "unknown" # Cannot categorize non-strings or empty strings
+
+            doc = self.analyze(text)
+
+            # If NLP fails, fall back solely to keyword matching
+            if doc is None:
+                 logging.warning(f"NLP failed for text: '{text[:50]}...'. Using keyword fallback.")
+                 has_negation_keyword = any(re.search(r"\b" + keyword + r"\b", text.lower()) for keyword in self.negation_keywords)
+                 has_normal_keyword = any(re.search(r"\b" + keyword + r"\b", text.lower()) for keyword in self.normal_keywords)
+
+                 if has_negation_keyword:
+                      return "negative"
+                 elif has_normal_keyword:
+                      return "normal"
+                 else:
+                      logging.debug(f"Text '{text[:50]}...' could not be categorized by keywords either.")
+                      return "unknown"
+
+
+            # --- Primary Categorization Logic (with NLP) ---
+
+            # 1. Check for Affirmed Entities (Highest Priority for "positive")
+            affirmed_entities_found = False
+            for ent in doc.ents:
+                 # Ensure the medspaCy context attribute exists
+                 if hasattr(ent._, 'is_negated'):
+                      if not ent._.is_negated:
+                           affirmed_entities_found = True
+                           break # Found one affirmed entity, classify as positive
+
+            if affirmed_entities_found:
+                 return "positive"
+
+            # 2. Check for Negated Entities or Explicit Negation Keywords
+            negated_entities_found = False
+            for ent in doc.ents:
+                 if hasattr(ent._, 'is_negated'):
+                      if ent._.is_negated:
+                           negated_entities_found = True
+                           break # Found one negated entity
+
+            has_negation_keyword = any(re.search(r"\b" + keyword + r"\b", text.lower()) for keyword in self.negation_keywords)
+
+            if negated_entities_found or has_negation_keyword:
+                 return "negative"
+
+            # 3. Check for Normal Keywords (if not positive or negative based on steps 1 & 2)
+            has_normal_keyword = any(re.search(r"\b" + keyword + r"\b", text.lower()) for keyword in self.normal_keywords)
+
+            if has_normal_keyword:
+                 return "normal"
+
+            # 4. Default or Unknown
+            # If none of the above apply, it could be a description without specific findings
+            # (e.g., "Abdomen is soft."). Such descriptions are often implicitly normal
+            # in a "negative exam" context. Defaulting to "normal" seems reasonable
+            # if no entities, negation, or explicit normal keywords signal otherwise.
+            logging.debug(f"Text '{text[:50]}...' not classified by rules 1-3. Defaulting to 'normal'.")
+            return "normal" # Defaulting to normal if nothing specific is flagged
+
+
+        def _traverse_and_categorize(data: Any, current_path: List[str]):
+            """Recursively traverses the data structure and categorizes string leaves."""
+            if isinstance(data, str):
+                # Found a string observation, categorize it
+                category = _categorize_observation(data)
+                logging.debug(f"Categorized '{data[:50]}...' as '{category}' at path {' -> '.join(current_path)}")
+
+                if category == "positive":
+                    self._add_to_nested_dict(positive_findings, current_path, data)
+                elif category == "negative":
+                    self._add_to_nested_dict(negative_findings, current_path, data)
+                elif category == "normal":
+                    self._add_to_nested_dict(normal_findings, current_path, data)
+                else:
+                    self._add_to_nested_dict(unknown_findings, current_path, data) # Add to unknown if needed
+
+            elif isinstance(data, dict):
+                # Traverse dictionary items
+                for key, value in data.items():
+                    _traverse_and_categorize(value, current_path + [key])
+
+            elif isinstance(data, list):
+                # Traverse list items (assuming list contains strings or structures)
+                # Note: The path doesn't change for items within the same list container
+                for item in data:
+                    _traverse_and_categorize(item, current_path)
+
+            # Ignore other data types (e.g., numbers, booleans) if they appear
+
+        # Start the recursive traversal
+        _traverse_and_categorize(physical_exam_data, [])
+
+        # Return the categorized findings dictionaries
+        return {
+            "positive": positive_findings,
+            "negative": negative_findings,
+            "normal": normal_findings
+            # Optionally include "unknown" for debugging: "unknown": unknown_findings
+        }
+
+
+# --- Example Usage (can be in the same file for testing or in your main app) ---
 if __name__ == "__main__":
-    main()
+    # Configure logging for standalone execution
+    # Use INFO for general messages, DEBUG for detailed analysis steps
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.info("ClinicalTextAnalyzer script starting in example usage mode...")
+
+    try:
+        # Initialize the analyzer
+        # You might need to download models if they are not present.
+        # Uncomment the spacy.cli.download lines at the top if needed.
+        # Use a model like "en_ner_bc5cdr_md" or "en_core_web_sm" + custom NER
+        # "en_ner_bc5cdr_md" recognizes diseases and chemicals, useful but might miss signs/symptoms.
+        # For better PE analysis, a model trained on clinical signs/symptoms is ideal.
+        # If using "en_core_web_sm" fallback, categorization relies more on keywords.
+        analyzer = ClinicalTextAnalyzer(model_name="en_ner_bc5cdr_md")
+        # analyzer = ClinicalTextAnalyzer(model_name="en_core_web_sm") # Test with fallback
+
+        # Example ROS text for the original function
+        ros = """
+            Review of Systems: Comprehensive
+            HENT: Negative for facial swelling and nosebleeds.
+            Eyes: Negative for photophobia and visual disturbance.
+            Respiratory: Negative for shortness of breath. No cough.
+            Cardiovascular: Negative for chest pain or palpitations. Normal heart sounds.
+            Gastrointestinal: Negative for nausea and vomiting. Abdomen non-tender.
+            Genitourinary: Negative for flank pain and hematuria. Clear urine.
+            Musculoskeletal: Positive for arthralgias (left arm pain). No back pain and neck pain. Limited range of motion in left shoulder.
+                Left lateral trapezius pain with radiation down left arm
+            Skin: Negative for wound or rash. Skin warm and dry.
+            Neurological: Positive for numbness in fingers. Negative for dizziness, syncope, weakness and headaches. Cranial nerves intact.
+            Psychiatric/Behavioral: Negative for confusion. Mood normal.
+        """
+
+        print("\n" + "="*40)
+        print("--- Analyzing Sample ROS ---")
+        print("="*40)
+
+        ros_doc = analyzer.analyze(ros)
+
+        if ros_doc:
+            # 1. Extract affirmed findings by system (using the original ROS function)
+            print("\n--- Extracting Affirmed Findings by System (ROS) ---")
+            affirmed_findings_ros = analyzer.get_affirmed_findings_by_system(ros_doc, ros)
+            print("\nAffirmed Findings Summary (ROS):")
+            print("-" * 30)
+            if affirmed_findings_ros:
+                for system, findings_list in affirmed_findings_ros.items():
+                    print(f"System: {system}")
+                    if findings_list:
+                        for entity_text, entity_label in findings_list:
+                            # Note: en_ner_bc5cdr_md detects Diseases and Chemicals.
+                            # 'arthralgias', 'numbness' etc. might not be found unless labeled as DISEASE.
+                            # The output here depends *heavily* on the NER model used.
+                            print(f"  - {entity_text} (Label: {entity_label})")
+                    print("-" * 10)
+            else:
+                print("  (No affirmed findings extracted by get_affirmed_findings_by_system)")
+            print("-" * 30)
+
+            # 2. Get Token Analysis DataFrame (for ROS)
+            print("\n--- Generating Token Analysis DataFrame (ROS) ---")
+            token_df_ros = analyzer.get_token_analysis_df(ros_doc)
+            print("\nToken Analysis DataFrame Head (ROS):")
+            print(token_df_ros.head())
+            # print("\nFull Token Analysis DataFrame (ROS):")
+            # print(token_df_ros[['TEXT', 'ENTITY_TYPE', 'ENTITY_CONTEXT', 'HEAD_TEXT', 'DEP']].to_string())
+
+            # 3. Save visualizations (for ROS)
+            output_dir = "./nlp_visualizations"
+            os.makedirs(output_dir, exist_ok=True)
+            analyzer.save_entity_visualization(ros_doc, os.path.join(output_dir, "ros_entities.html"))
+            analyzer.save_context_visualization(ros_doc, os.path.join(output_dir, "ros_context.html"))
+            print(f"\nROS visualizations saved to {output_dir}")
+
+
+        # Example Physical Exam data for the new function
+        # physical_exam_data =  {
+        #   "Constitutional": {
+        #     "Appearance": "She is not diaphoretic."
+        #   },
+        #   "HENT": {
+        #     "Head": "Normocephalic and atraumatic.",
+        #     "Mouth/Throat": {
+        #       "Mouth": "Mucous membranes are moist."
+        #     }
+        #   },
+        #   "Eyes": {
+        #     "General": "No scleral icterus.",
+        #     "Extraocular Movements": "Extraocular movements intact.",
+        #     "Conjunctiva/sclera": "Conjunctivae normal."
+        #   },
+        #   "Neck": {
+        #     "Vascular": "No JVD.",
+        #     "Comments": "No midline cervical tenderness" # This should be negative via keyword
+        #   },
+        #   "Cardiovascular": {
+        #     "Rate and Rhythm": "Normal rate and regular rhythm.",
+        #     "Heart sounds": "No murmur heard." # This should be negative via keyword or entity negation
+        #   },
+        #   "Pulmonary": {
+        #     "Effort": "No tachypnea or accessory muscle usage.", # Negative via keyword
+        #     "Breath sounds": "No wheezing or rales." # Negative via keyword or entity negation
+        #   },
+        #   "Abdominal": {
+        #     "General": "There is no distension.", # Negative via keyword
+        #     "Palpations": "Abdomen is soft.", # Normal via keyword
+        #     "Tenderness": "There is no abdominal tenderness." # Negative via keyword
+        #   },
+        #   "Musculoskeletal": {
+        #     "General": [
+        #       "Tenderness (Left posterior shoulder) present.", # Positive via entity or keyword
+        #       "No swelling or deformity." # Negative via keyword or entity negation
+        #     ],
+        #     "Cervical back": [
+        #       "Normal range of motion.", # Normal via keyword
+        #       "No edema or erythema." # Negative via keyword or entity negation
+        #     ],
+        #     "Comments": [
+        #       "Left posterior deltoid tenderness, left lateral trapezius tenderness, left paraspinal cervical tenderness.", # Contains positive findings (keywords or potential entities)
+        #       "No midline cervical tenderness." # Negative via keyword
+        #     ]
+        #   },
+        #   "Skin": {
+        #     "General": "Skin is warm and dry.", # Normal via keyword
+        #     "Capillary Refill": "Capillary refill takes less than 2 seconds.", # Could be normal (no keywords/entities though) - would be 'normal' by default
+        #     "Coloration": "Skin is not pale.", # Negative via keyword
+        #     "Findings": "No rash." # Negative via keyword or entity negation
+        #   },
+        #   "Neurological": {
+        #     "General": "No focal deficit present.", # Negative via keyword or entity negation
+        #     "Mental Status": [
+        #       "She is alert.", # Normal (no findings/negation/normal kw - default) or could add "alert" to normal_keywords
+        #       "Mental status is at baseline." # Normal (no findings/negation/normal kw - default)
+        #     ],
+        #     "Cranial Nerves": "Cranial nerves 2-12 are intact.", # Normal via keyword
+        #     "Sensory": "No sensory deficit.", # Negative via keyword or entity negation
+        #     "Motor": "No weakness.", # Negative via keyword or entity negation
+        #     "Deep Tendon Reflexes": {
+        #       "Reflex Scores": [
+        #         "Patellar reflexes are 2+ on the right side and 2+ on the left side.", # Normal/Descriptive (no findings/negation/normal kw - default)
+        #         "Achilles reflexes are 2+ on the right side and 2+ on the left side." # Normal/Descriptive (no findings/negation/normal kw - default)
+        #       ]
+        #     }
+        #   },
+        #   "Psychiatric": {
+        #     "Mood and Affect": "Mood normal.", # Normal via keyword
+        #     "Behavior": "Behavior normal." # Normal via keyword
+        #   }
+        # }
+        physical_exam_data = {
+            "Constitutional": {
+                "Appearance": "She is not diaphoretic."
+            },
+            "HENT": {
+                "Head": "Normocephalic and atraumatic.",
+                "Mouth/Throat": {
+                "Mouth": "Mucous membranes are moist."
+                }
+            },
+            "Eyes": {
+                "General": "No scleral icterus.",
+                "Extraocular Movements": "Extraocular movements intact.",
+                "Conjunctiva/sclera": "Conjunctivae normal."
+            },
+            "Neck": {
+                "Vascular": "No JVD.",
+                "Comments": "No midline cervical tenderness"
+            },
+            "Cardiovascular": {
+                "Rate and Rhythm": "Normal rate and regular rhythm.",
+                "Heart sounds": "No murmur heard."
+            },
+            "Pulmonary": {
+                "Effort": "No tachypnea or accessory muscle usage.",
+                "Breath sounds": "No wheezing or rales."
+            },
+            "Abdominal": {
+                "General": "There is no distension.",
+                "Palpations": "Abdomen is soft.",
+                "Tenderness": "There is no abdominal tenderness."
+            },
+            "Musculoskeletal": {
+                "General": [
+                "Tenderness (Left posterior shoulder) present.",
+                "No swelling or deformity."
+                ],
+                "Cervical back": [
+                "Normal range of motion.",
+                "No edema or erythema."
+                ],
+                "Comments": [
+                "Left posterior deltoid tenderness, left lateral trapezius tenderness, left paraspinal cervical tenderness.",
+                "No midline cervical tenderness."
+                ]
+            },
+            "Skin": {
+                "General": "Skin is warm and dry.",
+                "Capillary Refill": "Capillary refill takes less than 2 seconds.",
+                "Coloration": "Skin is not pale.",
+                "Findings": "No rash."
+            },
+            "Neurological": {
+                "General": "No focal deficit present.",
+                "Mental Status": [
+                "She is alert.",
+                "Mental status is at baseline."
+                ],
+                "Cranial Nerves": "Cranial nerves 2-12 are intact.",
+                "Sensory": "No sensory deficit.",
+                "Motor": "No weakness.",
+                "Deep Tendon Reflexes": {
+                "Reflex Scores": [
+                    "Patellar reflexes are 2+ on the right side and 2+ on the left side.",
+                    "Achilles reflexes are 2+ on the right side and 2+ on the left side."
+                 ]
+                }
+            },
+            "Psychiatric": {
+                "Mood and Affect": "Mood normal.",
+                "Behavior": "Behavior normal."
+            }
+        }
+        
+        print("\n" + "="*40)
+        print("--- Analyzing Sample Physical Exam ---")
+        print("="*40)
+
+        # 4. Analyze the physical exam dictionary
+        pe_analysis_results = analyzer.analyze_physical_exam(physical_exam_data)
+
+        print("\n--- Physical Exam Analysis Summary ---")
+        print("\nPositive Findings:")
+        print("-" * 30)
+        import json # Use json for pretty printing dictionaries
+        print(json.dumps(pe_analysis_results.get("positive", {}), indent=2))
+        print("-" * 30)
+
+        print("\nNegative Findings:")
+        print("-" * 30)
+        print(json.dumps(pe_analysis_results.get("negative", {}), indent=2))
+        print("-" * 30)
+
+        print("\nNormal Findings:")
+        print("-" * 30)
+        print(json.dumps(pe_analysis_results.get("normal", {}), indent=2))
+        print("-" * 30)
+
+        # Note on expected output: The accuracy of "positive" findings depends heavily
+        # on whether the NER model ("en_ner_bc5cdr_md" in this case) identifies the
+        # specific clinical findings (like "tenderness", "swelling", "deformity",
+        # "wheezing", "rales", "murmur", "diaphoretic", "icterus", "JVD", etc.) as
+        # entities. "en_ner_bc5cdr_md" primarily finds Diseases and Chemicals.
+        # Therefore, the categorization will rely more on the keyword heuristics
+        # and negation detection around non-entity phrases unless a more appropriate
+        # clinical NER model is used. The provided code uses a combination of medspacy
+        # context (if entities are found) and keyword heuristics (if no entities or
+        # context detection isn't sufficient).
+
+
+    except RuntimeError as e:
+        logging.error(f"Initialization failed: {e}. Please ensure models are downloaded.")
+        logging.info("Attempt to download necessary models:")
+        # Example of how you might download models if they are missing
+        # import subprocess
+        # try:
+        #     subprocess.run(["python", "-m", "spacy", "download", "en_ner_bc5cdr_md"], check=True)
+        #     subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"], check=True)
+        # except Exception as download_e:
+        #     logging.error(f"Model download failed: {download_e}")
+
+    except Exception as e:
+        logging.error(f"An unexpected error occurred during script execution: {e}", exc_info=True)
+
+    logging.info("ClinicalTextAnalyzer script finished.")

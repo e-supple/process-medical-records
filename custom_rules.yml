@@ -1,0 +1,31 @@
+# custom_context_rules.yml
+
+context_rules:
+
+  # Rule to catch "No [ENTITY]" after a colon, even if words intervene slightly
+  - name: "no_after_colon"
+    category: "NEGATED_EXISTENCE"
+    pattern:
+      # Matches a colon, optional whitespace, then "no" case-insensitively
+      - pattern:
+          -ORTH: ":"      # Literal colon
+          -IS_SPACE: True
+           OP: "?"       # Optional space
+          -LOWER: "no"   # Case-insensitive "no"
+        direction: "FORWARD" # Look forward from the pattern for the entity
+        max_scope: 5       # Look within the next 5 tokens (adjust as needed)
+
+  # You could add more specific rules if needed, e.g., targeting specific headers
+  - name: "breath_sounds_no"
+    category: "NEGATED_EXISTENCE"
+    pattern:
+      - LOWER: "sounds"
+      - ORTH: ":"
+      - IS_SPACE: True
+        OP: "?"
+      - LOWER: "no"
+    direction: "FORWARD"
+    max_scope: 3
+
+  # You can also copy relevant default rules here and modify them,
+  # or just let MedspaCy load defaults AND your custom file.

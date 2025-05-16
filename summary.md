@@ -1,0 +1,8 @@
+# Chronological Summary of Medical Events
+
+## April 04, 2024
+Reported symptoms including swelling numbness, pain.
+
+## Undated
+Reported symptoms including swelling nosebleeds, tingling, scleral icterus, tachypnea, nasal congestion cough muscle soreness, Heart sounds murmur, edema erythema, deformity, distension, dizziness syncope weakness headaches, Cancer, wheezing rales, hralgias, nausea vomiting, flank pain hematuria, Arm, diaphoretic, rus, deficit, shortness of breath, Tenderness, foreign body, tenderness, pain swelling, fracture dislocation subluxation soft tissue swelling DJD, pain. Underwent procedures such as Genitourinary, Vitals nursing note, Extraocular Movements Extraocular movements, reflexes, Achilles reflexes, Pain Assessment, Psychiatric, Mental Status, Abdominal, Neurological, Breath, Pain Scale, ulization, medical screening, vital signs, condition, Mental status, BP Temp Pulse Resp SpO2 Height Weight, ations, Pal, imaging, Con, Vitals, Nursing, X-ray, Humerus, physical, iva/, Psychiatric/Behavioral, observation, Reflex, of health, Mood Affect Mood, Cardiovascular, Pain Score, Rate Rhythm, APS Scale, physical exam, Body mass index, Systems HENT, Conjunctivae, age, Reflexes. Prescribed medications including oxyCODONE-Acetaminophen 5-325, Magnesium, Ipratropium-Albuterol, Fluticasone-Salmeterol 250, methylPREDNISolone, Riboflavin, Medications, NOSTRILFlonase, ingulair, Percocet Flex, one, Prednisone, benzaprine HCl, EPINEPHrine, Zithromax, Fluticasone Propionate, MCG/ACT, Percocet, Benzonatate, sulin, Advair, predniSONE, Medrol, iraglutide, Azithromycin 250, Ventolin HFA, Saxenda, Apixaban, Albuterol Sulfate, Montelukast Sodium, Outpatient Medications.
+

@@ -1,0 +1,1452 @@
+2025-05-11 09:35:51,001 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 09:35:51,013 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 1
+2025-05-11 09:35:51,013 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 2
+2025-05-11 09:35:51,013 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 2
+2025-05-11 09:35:51,014 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 2
+2025-05-11 09:35:51,014 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 2
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 3
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 4
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 4
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 4
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 5
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark '11/22/2023 PT OASIS Discharge' at level 3, page 5
+2025-05-11 09:35:51,019 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 5
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 7
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 7
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 23
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/22/2023  9:21 AM' at level 4, page 30
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 33
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark '11/22/2023' at level 3, page 33
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 33
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 34
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 38
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 38
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark '11/22/23 0925' at level 4, page 38
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 38
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark '11/22/23 0930' at level 4, page 39
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 39
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark '11/22/23 0925' at level 4, page 39
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'User Key' at level 3, page 39
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 39
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Documents' at level 2, page 46
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 11/22/2023  9:37 AM' at level 3, page 46
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Scan' at level 4, page 47
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 48
+2025-05-11 09:35:51,020 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 48
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 48
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 48
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 49
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 50
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 50
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 50
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 51
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark '11/15/2023 PT Home Visit' at level 3, page 51
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 51
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 53
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 53
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/15/2023  1:34 PM' at level 4, page 60
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 61
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark '11/15/2023' at level 3, page 61
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 61
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 62
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 65
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 65
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark '11/15/23 1213' at level 4, page 65
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 66
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark '11/15/23 1300 -- 11/15/23 1230' at level 4, page 66
+2025-05-11 09:35:51,021 - WARNING - Orphaned bookmark 'User Key' at level 3, page 66
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 66
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Documents' at level 2, page 72
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 11/15/2023 12:28 PM' at level 3, page 72
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Scan' at level 4, page 72
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 74
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 74
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 74
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 74
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 75
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 76
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 76
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 76
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 77
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark '11/8/2023 PT Reassessment' at level 3, page 77
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 77
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 79
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 79
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/8/2023  9:02 AM' at level 4, page 87
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 89
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark '11/08/2023' at level 3, page 89
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 89
+2025-05-11 09:35:51,022 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 89
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 95
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 95
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark '11/08/23 0906' at level 4, page 95
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 95
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark '11/08/23 0930' at level 4, page 95
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 96
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark '11/08/23 0906' at level 4, page 96
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'User Key' at level 3, page 96
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 96
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 101
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 101
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 101
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 101
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 102
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 103
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 103
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 103
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 104
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark '11/3/2023 PT Home Visit' at level 3, page 104
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 104
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 106
+2025-05-11 09:35:51,023 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 106
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/3/2023 10:26 AM' at level 4, page 112
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 112
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark '11/03/2023' at level 3, page 112
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 112
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 113
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark '11/03/23 0949 -- 11/03/23 0941' at level 4, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark '11/03/23 0949' at level 4, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'User Key' at level 3, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 116
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 122
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 122
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 122
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 122
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 123
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 124
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 124
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 124
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 125
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark '11/2/2023 SN Discipline Discharge' at level 3, page 125
+2025-05-11 09:35:51,024 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 125
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 127
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 127
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 132
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Home Health  by Einsig, Amanda L, RN at 11/2/2023  1:15 PM' at level 4, page 136
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 138
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark '11/02/2023' at level 3, page 138
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 138
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 138
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 143
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 143
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark '11/02/23 1330 -- 11/02/23 1318' at level 4, page 143
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 144
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark '11/02/23 1318' at level 4, page 144
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'User Key' at level 3, page 144
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 144
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 152
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 152
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 152
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 152
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 153
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 154
+2025-05-11 09:35:51,025 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 154
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 154
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 155
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark '11/1/2023 PT Home Visit' at level 3, page 155
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 155
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Home Health  by Darrow, Michael, PTA at 11/1/2023  1:15 PM' at level 4, page 161
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 161
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark '11/01/2023' at level 3, page 162
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 162
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 162
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark '11/01/23 1324' at level 4, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark '11/01/23 1324' at level 4, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'User Key' at level 3, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 166
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 169
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 169
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 169
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 169
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 170
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 171
+2025-05-11 09:35:51,026 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 171
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 171
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 172
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark '10/27/2023 PT Home Visit' at level 3, page 172
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 172
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 174
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 174
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/27/2023  4:06 PM' at level 4, page 180
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 181
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark '10/27/2023' at level 3, page 181
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 181
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 182
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 185
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 185
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark '10/27/23 1606' at level 4, page 185
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 186
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark '10/27/23 1606' at level 4, page 186
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'User Key' at level 3, page 186
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 186
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 191
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 191
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 191
+2025-05-11 09:35:51,027 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 191
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 192
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 193
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 193
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 193
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 194
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark '10/26/2023 SN Home Visit' at level 3, page 194
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 194
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 196
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 196
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Home Health  by Thomas, Stephanie I, LPN at 10/26/2023  9:42 AM' at level 4, page 203
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 205
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark '10/26/2023' at level 3, page 205
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 205
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 206
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 209
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 209
+2025-05-11 09:35:51,028 - WARNING - Orphaned bookmark '10/26/23 0949' at level 4, page 209
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Lines/Drains/Airways' at level 3, page 209
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark '10/26/23 0948 -- 10/26/23 0945' at level 4, page 209
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 210
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark '10/26/23 0946' at level 4, page 210
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 211
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark '10/26/23 0949' at level 4, page 211
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'User Key' at level 3, page 211
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 211
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Documents' at level 2, page 217
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/26/2023  9:48 AM: Wound 09/28/23 Laceration Left Heel' at level 3, page 217
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Scan' at level 4, page 217
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/26/2023  9:48 AM: Incision 10/04/23 Surgical Incision Distal;Right Pretibial' at level 3, page 218
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Scan' at level 4, page 219
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 220
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 220
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 220
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 220
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 221
+2025-05-11 09:35:51,029 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 222
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 222
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 222
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 223
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark '10/25/2023 PT Home Visit' at level 3, page 223
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 223
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 225
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 225
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/25/2023 10:16 AM' at level 4, page 231
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 232
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark '10/25/2023' at level 3, page 232
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 232
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 233
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 236
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 236
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark '10/25/23 1016' at level 4, page 237
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 237
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark '10/25/23 1016' at level 4, page 237
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'User Key' at level 3, page 237
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 237
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 242
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 242
+2025-05-11 09:35:51,030 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 242
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 242
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 243
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 244
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 244
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 244
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 245
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark '10/20/2023 PT Home Visit' at level 3, page 245
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 245
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 247
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 247
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/20/2023 10:07 AM' at level 4, page 252
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 253
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark '10/20/2023' at level 3, page 253
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 253
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 254
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark '10/20/23 1007' at level 4, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark '10/20/23 1007' at level 4, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'User Key' at level 3, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 257
+2025-05-11 09:35:51,031 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 263
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 263
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 263
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 263
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 264
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 265
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 265
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 265
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 266
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark '10/19/2023 SN Home Visit' at level 3, page 266
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 266
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 268
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 268
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Home Health  by Einsig, Amanda L, RN at 10/19/2023  1:05 PM' at level 4, page 275
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 277
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark '10/19/2023' at level 3, page 277
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 277
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 278
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 281
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 281
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark '10/19/23 1319 -- 10/19/23 1318' at level 4, page 281
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 282
+2025-05-11 09:35:51,032 - WARNING - Orphaned bookmark '10/19/23 1310 -- 10/19/23 1307' at level 4, page 282
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 283
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark '10/19/23 1319' at level 4, page 283
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'User Key' at level 3, page 283
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 283
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Documents' at level 2, page 288
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/19/2023  1:12 PM' at level 3, page 288
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Scan' at level 4, page 288
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/19/2023  1:17 PM' at level 3, page 289
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Scan' at level 4, page 290
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 291
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 291
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 291
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 291
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 292
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 293
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 293
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 293
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 294
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark '10/18/2023 PT Home Visit' at level 3, page 294
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 294
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 296
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 296
+2025-05-11 09:35:51,033 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/18/2023  9:21 AM' at level 4, page 302
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 303
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark '10/18/2023' at level 3, page 303
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 303
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 303
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 306
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 306
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark '10/18/23 0929' at level 4, page 306
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 307
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark '10/18/23 1000' at level 4, page 307
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 307
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark '10/18/23 0929' at level 4, page 307
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'User Key' at level 3, page 307
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 307
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 313
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 313
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 313
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 313
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 314
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 315
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 315
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 315
+2025-05-11 09:35:51,034 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 316
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark '10/13/2023 PT Home Visit' at level 3, page 316
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 316
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 318
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 318
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/13/2023 11:15 AM' at level 4, page 324
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 324
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark '10/13/2023' at level 3, page 324
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 324
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 325
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 328
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 328
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark '10/13/23 1119' at level 4, page 328
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 329
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark '10/13/23 1119' at level 4, page 329
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'User Key' at level 3, page 329
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 329
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 334
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 334
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 334
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 334
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 335
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 336
+2025-05-11 09:35:51,035 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 336
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 336
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 337
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark '10/13/2023 SN Home Visit' at level 3, page 337
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 337
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 339
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 339
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Home Health  by Frigm, Kristin M, RN at 10/13/2023  1:13 PM' at level 4, page 345
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 348
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark '10/13/2023' at level 3, page 348
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 348
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 349
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 352
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 352
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark '10/13/23 1325 -- 10/13/23 1315' at level 4, page 352
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 353
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark '10/13/23 1325' at level 4, page 353
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'User Key' at level 3, page 353
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 353
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 360
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 360
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 360
+2025-05-11 09:35:51,036 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 360
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 361
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 362
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 362
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 362
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 363
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark '10/13/2023 OT Evaluation' at level 3, page 363
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 363
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 365
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 365
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 368
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark '10/13/23 1021' at level 4, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark '10/13/23 1021' at level 4, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'User Key' at level 3, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 372
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 378
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 378
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 378
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 378
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 379
+2025-05-11 09:35:51,037 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 380
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 380
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 380
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 381
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark '10/12/2023 Telephone Encounter' at level 3, page 381
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 381
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 381
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 383
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 383
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 383
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 383
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 384
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 385
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 385
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 385
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 386
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark '10/12/2023 Telephone Encounter' at level 3, page 386
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 386
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 387
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 387
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 387
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 387
+2025-05-11 09:35:51,038 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 388
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 389
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 389
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 389
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 390
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark '10/11/2023 Telephone Encounter' at level 3, page 390
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 390
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 392
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 392
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 392
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 392
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 393
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 394
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 394
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 394
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 395
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark '10/10/2023 PT Evaluation' at level 3, page 395
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 395
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 397
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 397
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 400
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/10/2023 10:12 AM' at level 4, page 404
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 406
+2025-05-11 09:35:51,039 - WARNING - Orphaned bookmark '10/10/2023' at level 3, page 406
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 406
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 407
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 410
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 410
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark '10/10/23 1012' at level 4, page 410
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 411
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark '10/10/23 1012' at level 4, page 411
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'User Key' at level 3, page 411
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 411
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Referral Info' at level 2, page 417
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 419
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 419
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 419
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 419
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 420
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 421
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 421
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 421
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 422
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark '10/8/2023 SN OASIS Start of Care' at level 3, page 422
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 422
+2025-05-11 09:35:51,040 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 424
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 424
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 444
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Demographics' at level 4, page 445
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Payment Information' at level 4, page 448
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Home Health  by Phan, Vanessa R, RN at 10/8/2023  9:32 AM' at level 4, page 451
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 458
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark '10/08/2023' at level 3, page 458
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 458
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 459
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 463
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 463
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark '10/08/23 1030 -- 10/08/23 1006' at level 4, page 463
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 465
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark '10/08/23 1006' at level 4, page 465
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'User Key' at level 3, page 465
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 465
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 474
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 474
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 474
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 474
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 475
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 476
+2025-05-11 09:35:51,041 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 476
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 477
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Documents' at level 2, page 478
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Home Care - Scan on 11/21/2023 10:04 AM: DC INSTRUCTIONS' at level 3, page 478
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Scan' at level 4, page 478
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Home Care - Scan on 12/7/2023  2:50 PM: DC INSTRUCTIONS' at level 3, page 479
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Scan' at level 4, page 479
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Home Care Orders' at level 2, page 480
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Home Health Face to Face Attestation by Martin, Christine V, RN on 10/7/2023 10:03 AM' at level 3, page 480
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Plan of Care by Lee, Diana L on 10/8/2023  5:45 AM' at level 3, page 481
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Episode Care Plan' at level 2, page 494
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Plans of Care' at level 2, page 506
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Home Health Plan of Care 10/8/23' at level 3, page 506
+2025-05-11 09:35:51,042 - WARNING - Orphaned bookmark 'Plan Version 1' at level 4, page 506
+2025-05-11 09:35:51,042 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 09:37:14,672 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 09:37:14,685 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 1
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 2
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 2
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 2
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 2
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 3
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 4
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 4
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 4
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 5
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark '11/22/2023 PT OASIS Discharge' at level 3, page 5
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 5
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 7
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 7
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 23
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/22/2023  9:21 AM' at level 4, page 30
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 33
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark '11/22/2023' at level 3, page 33
+2025-05-11 09:37:14,686 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 33
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 34
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 38
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 38
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark '11/22/23 0925' at level 4, page 38
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 38
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark '11/22/23 0930' at level 4, page 39
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 39
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark '11/22/23 0925' at level 4, page 39
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'User Key' at level 3, page 39
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 39
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Documents' at level 2, page 46
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 11/22/2023  9:37 AM' at level 3, page 46
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Scan' at level 4, page 47
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 48
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 48
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 48
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 48
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 49
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 50
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 50
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 50
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 51
+2025-05-11 09:37:14,687 - WARNING - Orphaned bookmark '11/15/2023 PT Home Visit' at level 3, page 51
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 51
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 53
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 53
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/15/2023  1:34 PM' at level 4, page 60
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 61
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark '11/15/2023' at level 3, page 61
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 61
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 62
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 65
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 65
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark '11/15/23 1213' at level 4, page 65
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 66
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark '11/15/23 1300 -- 11/15/23 1230' at level 4, page 66
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'User Key' at level 3, page 66
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 66
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Documents' at level 2, page 72
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 11/15/2023 12:28 PM' at level 3, page 72
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Scan' at level 4, page 72
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 74
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 74
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 74
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 74
+2025-05-11 09:37:14,688 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 75
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 76
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 76
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 76
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 77
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark '11/8/2023 PT Reassessment' at level 3, page 77
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 77
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 79
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 79
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/8/2023  9:02 AM' at level 4, page 87
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 89
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark '11/08/2023' at level 3, page 89
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 89
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 89
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 95
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 95
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark '11/08/23 0906' at level 4, page 95
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 95
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark '11/08/23 0930' at level 4, page 95
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 96
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark '11/08/23 0906' at level 4, page 96
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'User Key' at level 3, page 96
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 96
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 101
+2025-05-11 09:37:14,689 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 101
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 101
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 101
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 102
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 103
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 103
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 103
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 104
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark '11/3/2023 PT Home Visit' at level 3, page 104
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 104
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 106
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 106
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 11/3/2023 10:26 AM' at level 4, page 112
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 112
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark '11/03/2023' at level 3, page 112
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 112
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 113
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 116
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 116
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark '11/03/23 0949 -- 11/03/23 0941' at level 4, page 116
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 116
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark '11/03/23 0949' at level 4, page 116
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'User Key' at level 3, page 116
+2025-05-11 09:37:14,690 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 116
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 122
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 122
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 122
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 122
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 123
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 124
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 124
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 124
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 125
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark '11/2/2023 SN Discipline Discharge' at level 3, page 125
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 125
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 127
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 127
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 132
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Home Health  by Einsig, Amanda L, RN at 11/2/2023  1:15 PM' at level 4, page 136
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 138
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark '11/02/2023' at level 3, page 138
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 138
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 138
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 143
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 143
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark '11/02/23 1330 -- 11/02/23 1318' at level 4, page 143
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 144
+2025-05-11 09:37:14,691 - WARNING - Orphaned bookmark '11/02/23 1318' at level 4, page 144
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'User Key' at level 3, page 144
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 144
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 152
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 152
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 152
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 152
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 153
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 154
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 154
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 154
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 155
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark '11/1/2023 PT Home Visit' at level 3, page 155
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 155
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Home Health  by Darrow, Michael, PTA at 11/1/2023  1:15 PM' at level 4, page 161
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 161
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark '11/01/2023' at level 3, page 162
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 162
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 162
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 166
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 166
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark '11/01/23 1324' at level 4, page 166
+2025-05-11 09:37:14,692 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 166
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark '11/01/23 1324' at level 4, page 166
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'User Key' at level 3, page 166
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 166
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 169
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 169
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 169
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 169
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 170
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 171
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 171
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 171
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 172
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark '10/27/2023 PT Home Visit' at level 3, page 172
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 172
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 174
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 174
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/27/2023  4:06 PM' at level 4, page 180
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 181
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark '10/27/2023' at level 3, page 181
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 181
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 182
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 185
+2025-05-11 09:37:14,693 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 185
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark '10/27/23 1606' at level 4, page 185
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 186
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark '10/27/23 1606' at level 4, page 186
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'User Key' at level 3, page 186
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 186
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 191
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 191
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 191
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 191
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 192
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 193
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 193
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 193
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 194
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark '10/26/2023 SN Home Visit' at level 3, page 194
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 194
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 196
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 196
+2025-05-11 09:37:14,694 - WARNING - Orphaned bookmark 'Home Health  by Thomas, Stephanie I, LPN at 10/26/2023  9:42 AM' at level 4, page 203
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 205
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark '10/26/2023' at level 3, page 205
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 205
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 206
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 209
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 209
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark '10/26/23 0949' at level 4, page 209
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Lines/Drains/Airways' at level 3, page 209
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark '10/26/23 0948 -- 10/26/23 0945' at level 4, page 209
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 210
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark '10/26/23 0946' at level 4, page 210
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 211
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark '10/26/23 0949' at level 4, page 211
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'User Key' at level 3, page 211
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 211
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Documents' at level 2, page 217
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/26/2023  9:48 AM: Wound 09/28/23 Laceration Left Heel' at level 3, page 217
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Scan' at level 4, page 217
+2025-05-11 09:37:14,695 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/26/2023  9:48 AM: Incision 10/04/23 Surgical Incision Distal;Right Pretibial' at level 3, page 218
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Scan' at level 4, page 219
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 220
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 220
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 220
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 220
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 221
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 222
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 222
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 222
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 223
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark '10/25/2023 PT Home Visit' at level 3, page 223
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 223
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 225
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 225
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/25/2023 10:16 AM' at level 4, page 231
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 232
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark '10/25/2023' at level 3, page 232
+2025-05-11 09:37:14,696 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 232
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 233
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 236
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 236
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark '10/25/23 1016' at level 4, page 237
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 237
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark '10/25/23 1016' at level 4, page 237
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'User Key' at level 3, page 237
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 237
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 242
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 242
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 242
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 242
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 243
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 244
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 244
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 244
+2025-05-11 09:37:14,698 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 245
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark '10/20/2023 PT Home Visit' at level 3, page 245
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 245
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 247
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 247
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/20/2023 10:07 AM' at level 4, page 252
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 253
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark '10/20/2023' at level 3, page 253
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 253
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 254
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark '10/20/23 1007' at level 4, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark '10/20/23 1007' at level 4, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'User Key' at level 3, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 257
+2025-05-11 09:37:14,699 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 263
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 263
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 263
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 263
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 264
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 265
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 265
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 265
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 266
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark '10/19/2023 SN Home Visit' at level 3, page 266
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 266
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 268
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 268
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Home Health  by Einsig, Amanda L, RN at 10/19/2023  1:05 PM' at level 4, page 275
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 277
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark '10/19/2023' at level 3, page 277
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 277
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 278
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 281
+2025-05-11 09:37:14,700 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 281
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark '10/19/23 1319 -- 10/19/23 1318' at level 4, page 281
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 282
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark '10/19/23 1310 -- 10/19/23 1307' at level 4, page 282
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 283
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark '10/19/23 1319' at level 4, page 283
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'User Key' at level 3, page 283
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 283
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Documents' at level 2, page 288
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/19/2023  1:12 PM' at level 3, page 288
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Scan' at level 4, page 288
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Photo Wound Home Health - Scan on 10/19/2023  1:17 PM' at level 3, page 289
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Scan' at level 4, page 290
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 291
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 291
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 291
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 291
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 292
+2025-05-11 09:37:14,701 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 293
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 293
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 293
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 294
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark '10/18/2023 PT Home Visit' at level 3, page 294
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 294
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 296
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 296
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/18/2023  9:21 AM' at level 4, page 302
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 303
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark '10/18/2023' at level 3, page 303
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 303
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 303
+2025-05-11 09:37:14,702 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 306
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 306
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark '10/18/23 0929' at level 4, page 306
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 307
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark '10/18/23 1000' at level 4, page 307
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 307
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark '10/18/23 0929' at level 4, page 307
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'User Key' at level 3, page 307
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 307
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 313
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 313
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 313
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 313
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 314
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 315
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 315
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 315
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 316
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark '10/13/2023 PT Home Visit' at level 3, page 316
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 316
+2025-05-11 09:37:14,703 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 318
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 318
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/13/2023 11:15 AM' at level 4, page 324
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 324
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark '10/13/2023' at level 3, page 324
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 324
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 325
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 328
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 328
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark '10/13/23 1119' at level 4, page 328
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 329
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark '10/13/23 1119' at level 4, page 329
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'User Key' at level 3, page 329
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 329
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 334
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 334
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 334
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 334
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 335
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 336
+2025-05-11 09:37:14,704 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 336
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 336
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 337
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark '10/13/2023 SN Home Visit' at level 3, page 337
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 337
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 339
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 339
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Home Health  by Frigm, Kristin M, RN at 10/13/2023  1:13 PM' at level 4, page 345
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 348
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark '10/13/2023' at level 3, page 348
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 348
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 349
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 352
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 352
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark '10/13/23 1325 -- 10/13/23 1315' at level 4, page 352
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 353
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark '10/13/23 1325' at level 4, page 353
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'User Key' at level 3, page 353
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 353
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 360
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 360
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 360
+2025-05-11 09:37:14,705 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 360
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 361
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 362
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 362
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 362
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 363
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark '10/13/2023 OT Evaluation' at level 3, page 363
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 363
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 365
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 365
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 368
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark '10/13/23 1021' at level 4, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark '10/13/23 1021' at level 4, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'User Key' at level 3, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 372
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 378
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 378
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 378
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 378
+2025-05-11 09:37:14,706 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 379
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 380
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 380
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 380
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 381
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark '10/12/2023 Telephone Encounter' at level 3, page 381
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 381
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 381
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 383
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 383
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 383
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 383
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 384
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 385
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 385
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 385
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 386
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark '10/12/2023 Telephone Encounter' at level 3, page 386
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 386
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 387
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 387
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 387
+2025-05-11 09:37:14,707 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 387
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 388
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 389
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 389
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 389
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 390
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark '10/11/2023 Telephone Encounter' at level 3, page 390
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 390
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 392
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 392
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 392
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 392
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 393
+2025-05-11 09:37:14,708 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 394
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 394
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 394
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 395
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark '10/10/2023 PT Evaluation' at level 3, page 395
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 395
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 397
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 397
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 400
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Home Health  by Lesko, Katherine B, PT at 10/10/2023 10:12 AM' at level 4, page 404
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 406
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark '10/10/2023' at level 3, page 406
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 406
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 407
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 410
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Encounter Vitals' at level 3, page 410
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark '10/10/23 1012' at level 4, page 410
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 411
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark '10/10/23 1012' at level 4, page 411
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'User Key' at level 3, page 411
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 411
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Referral Info' at level 2, page 417
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 419
+2025-05-11 09:37:14,709 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 419
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 419
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 419
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 420
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 421
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 421
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 421
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Home Care Visit' at level 2, page 422
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark '10/8/2023 SN OASIS Start of Care' at level 3, page 422
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Administrative Information' at level 4, page 422
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Safety Concerns' at level 4, page 424
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Abuse' at level 4, page 424
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Patient Safety Goals' at level 4, page 444
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Demographics' at level 4, page 445
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Payment Information' at level 4, page 448
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Home Health  by Phan, Vanessa R, RN at 10/8/2023  9:32 AM' at level 4, page 451
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Clinical Notes' at level 2, page 458
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark '10/08/2023' at level 3, page 458
+2025-05-11 09:37:14,710 - WARNING - Orphaned bookmark 'Notes Report' at level 4, page 458
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Additional Documentation' at level 5, page 459
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Flowsheets' at level 2, page 463
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Remote Client Documentation Flowsheet' at level 3, page 463
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark '10/08/23 1030 -- 10/08/23 1006' at level 4, page 463
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Vitals Reassessment' at level 3, page 465
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark '10/08/23 1006' at level 4, page 465
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'User Key' at level 3, page 465
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'SmartForms' at level 2, page 465
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Demographics' at level 2, page 474
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Admission Information' at level 2, page 474
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Discharge Information' at level 2, page 474
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Visit Account Information' at level 2, page 474
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Coding Summary' at level 2, page 475
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Final Diagnoses' at level 3, page 476
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Visit Information' at level 2, page 476
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Auth/Cert Information' at level 2, page 477
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Documents' at level 2, page 478
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Home Care - Scan on 11/21/2023 10:04 AM: DC INSTRUCTIONS' at level 3, page 478
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Scan' at level 4, page 478
+2025-05-11 09:37:14,711 - WARNING - Orphaned bookmark 'Home Care - Scan on 12/7/2023  2:50 PM: DC INSTRUCTIONS' at level 3, page 479
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Scan' at level 4, page 479
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Home Care Orders' at level 2, page 480
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Home Health Face to Face Attestation by Martin, Christine V, RN on 10/7/2023 10:03 AM' at level 3, page 480
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Plan of Care by Lee, Diana L on 10/8/2023  5:45 AM' at level 3, page 481
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Episode Care Plan' at level 2, page 494
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Plans of Care' at level 2, page 506
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Home Health Plan of Care 10/8/23' at level 3, page 506
+2025-05-11 09:37:14,712 - WARNING - Orphaned bookmark 'Plan Version 1' at level 4, page 506
+2025-05-11 09:37:14,712 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 09:45:16,831 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 09:45:16,880 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 09:45:16,896 - INFO - Extracted Nested Bookmarks:
+2025-05-11 09:45:16,896 - INFO - 11/29/2023 - Appointment in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,896 - INFO -   - Visit Information (page 1)
+2025-05-11 09:45:16,896 - INFO - 11/22/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,896 - INFO -   - Demographics (page 2)
+2025-05-11 09:45:16,896 - INFO -   - Admission Information (page 2)
+2025-05-11 09:45:16,897 - INFO -   - Discharge Information (page 2)
+2025-05-11 09:45:16,897 - INFO -   - Visit Account Information (page 2)
+2025-05-11 09:45:16,897 - INFO -   - Coding Summary (page 3)
+2025-05-11 09:45:16,897 - INFO -     - Final Diagnoses (page 4)
+2025-05-11 09:45:16,897 - INFO -   - Visit Information (page 4)
+2025-05-11 09:45:16,897 - INFO -   - Auth/Cert Information (page 4)
+2025-05-11 09:45:16,897 - INFO -   - Home Care Visit (page 5)
+2025-05-11 09:45:16,897 - INFO -     - 11/22/2023 PT OASIS Discharge (page 5)
+2025-05-11 09:45:16,897 - INFO -   - Clinical Notes (page 33)
+2025-05-11 09:45:16,897 - INFO -     - 11/22/2023 (page 33)
+2025-05-11 09:45:16,897 - INFO -   - Flowsheets (page 38)
+2025-05-11 09:45:16,897 - INFO -     - Encounter Vitals (page 38)
+2025-05-11 09:45:16,897 - INFO -     - Remote Client Documentation Flowsheet (page 38)
+2025-05-11 09:45:16,897 - INFO -     - Vitals Reassessment (page 39)
+2025-05-11 09:45:16,897 - INFO -     - User Key (page 39)
+2025-05-11 09:45:16,898 - INFO -   - SmartForms (page 39)
+2025-05-11 09:45:16,898 - INFO -   - Documents (page 46)
+2025-05-11 09:45:16,898 - INFO -     - Photo Wound Home Health - Scan on 11/22/2023  9:37 AM (page 46)
+2025-05-11 09:45:16,898 - INFO - 11/15/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,898 - INFO -   - Demographics (page 48)
+2025-05-11 09:45:16,898 - INFO -   - Admission Information (page 48)
+2025-05-11 09:45:16,898 - INFO -   - Discharge Information (page 48)
+2025-05-11 09:45:16,898 - INFO -   - Visit Account Information (page 48)
+2025-05-11 09:45:16,898 - INFO -   - Coding Summary (page 49)
+2025-05-11 09:45:16,898 - INFO -     - Final Diagnoses (page 50)
+2025-05-11 09:45:16,898 - INFO -   - Visit Information (page 50)
+2025-05-11 09:45:16,898 - INFO -   - Auth/Cert Information (page 50)
+2025-05-11 09:45:16,898 - INFO -   - Home Care Visit (page 51)
+2025-05-11 09:45:16,898 - INFO -     - 11/15/2023 PT Home Visit (page 51)
+2025-05-11 09:45:16,898 - INFO -   - Clinical Notes (page 61)
+2025-05-11 09:45:16,898 - INFO -     - 11/15/2023 (page 61)
+2025-05-11 09:45:16,898 - INFO -   - Flowsheets (page 65)
+2025-05-11 09:45:16,898 - INFO -     - Encounter Vitals (page 65)
+2025-05-11 09:45:16,898 - INFO -     - Remote Client Documentation Flowsheet (page 66)
+2025-05-11 09:45:16,898 - INFO -     - User Key (page 66)
+2025-05-11 09:45:16,899 - INFO -   - SmartForms (page 66)
+2025-05-11 09:45:16,899 - INFO -   - Documents (page 72)
+2025-05-11 09:45:16,899 - INFO -     - Photo Wound Home Health - Scan on 11/15/2023 12:28 PM (page 72)
+2025-05-11 09:45:16,899 - INFO - 11/08/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,899 - INFO -   - Demographics (page 74)
+2025-05-11 09:45:16,899 - INFO -   - Admission Information (page 74)
+2025-05-11 09:45:16,899 - INFO -   - Discharge Information (page 74)
+2025-05-11 09:45:16,899 - INFO -   - Visit Account Information (page 74)
+2025-05-11 09:45:16,899 - INFO -   - Coding Summary (page 75)
+2025-05-11 09:45:16,899 - INFO -     - Final Diagnoses (page 76)
+2025-05-11 09:45:16,899 - INFO -   - Visit Information (page 76)
+2025-05-11 09:45:16,899 - INFO -   - Auth/Cert Information (page 76)
+2025-05-11 09:45:16,899 - INFO -   - Home Care Visit (page 77)
+2025-05-11 09:45:16,899 - INFO -     - 11/8/2023 PT Reassessment (page 77)
+2025-05-11 09:45:16,899 - INFO -   - Clinical Notes (page 89)
+2025-05-11 09:45:16,899 - INFO -     - 11/08/2023 (page 89)
+2025-05-11 09:45:16,899 - INFO -   - Flowsheets (page 95)
+2025-05-11 09:45:16,899 - INFO -     - Encounter Vitals (page 95)
+2025-05-11 09:45:16,899 - INFO -     - Remote Client Documentation Flowsheet (page 95)
+2025-05-11 09:45:16,899 - INFO -     - Vitals Reassessment (page 96)
+2025-05-11 09:45:16,899 - INFO -     - User Key (page 96)
+2025-05-11 09:45:16,900 - INFO -   - SmartForms (page 96)
+2025-05-11 09:45:16,900 - INFO - 11/03/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,900 - INFO -   - Demographics (page 101)
+2025-05-11 09:45:16,900 - INFO -   - Admission Information (page 101)
+2025-05-11 09:45:16,900 - INFO -   - Discharge Information (page 101)
+2025-05-11 09:45:16,900 - INFO -   - Visit Account Information (page 101)
+2025-05-11 09:45:16,900 - INFO -   - Coding Summary (page 102)
+2025-05-11 09:45:16,900 - INFO -     - Final Diagnoses (page 103)
+2025-05-11 09:45:16,900 - INFO -   - Visit Information (page 103)
+2025-05-11 09:45:16,900 - INFO -   - Auth/Cert Information (page 103)
+2025-05-11 09:45:16,900 - INFO -   - Home Care Visit (page 104)
+2025-05-11 09:45:16,900 - INFO -     - 11/3/2023 PT Home Visit (page 104)
+2025-05-11 09:45:16,900 - INFO -   - Clinical Notes (page 112)
+2025-05-11 09:45:16,900 - INFO -     - 11/03/2023 (page 112)
+2025-05-11 09:45:16,900 - INFO -   - Flowsheets (page 116)
+2025-05-11 09:45:16,900 - INFO -     - Encounter Vitals (page 116)
+2025-05-11 09:45:16,900 - INFO -     - Vitals Reassessment (page 116)
+2025-05-11 09:45:16,901 - INFO -     - User Key (page 116)
+2025-05-11 09:45:16,901 - INFO -   - SmartForms (page 116)
+2025-05-11 09:45:16,901 - INFO - 11/02/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,901 - INFO -   - Demographics (page 122)
+2025-05-11 09:45:16,901 - INFO -   - Admission Information (page 122)
+2025-05-11 09:45:16,901 - INFO -   - Discharge Information (page 122)
+2025-05-11 09:45:16,901 - INFO -   - Visit Account Information (page 122)
+2025-05-11 09:45:16,901 - INFO -   - Coding Summary (page 123)
+2025-05-11 09:45:16,901 - INFO -     - Final Diagnoses (page 124)
+2025-05-11 09:45:16,901 - INFO -   - Visit Information (page 124)
+2025-05-11 09:45:16,901 - INFO -   - Auth/Cert Information (page 124)
+2025-05-11 09:45:16,901 - INFO -   - Home Care Visit (page 125)
+2025-05-11 09:45:16,901 - INFO -     - 11/2/2023 SN Discipline Discharge (page 125)
+2025-05-11 09:45:16,901 - INFO -   - Clinical Notes (page 138)
+2025-05-11 09:45:16,901 - INFO -     - 11/02/2023 (page 138)
+2025-05-11 09:45:16,901 - INFO -   - Flowsheets (page 143)
+2025-05-11 09:45:16,901 - INFO -     - Remote Client Documentation Flowsheet (page 143)
+2025-05-11 09:45:16,901 - INFO -     - Vitals Reassessment (page 144)
+2025-05-11 09:45:16,901 - INFO -     - User Key (page 144)
+2025-05-11 09:45:16,901 - INFO -   - SmartForms (page 144)
+2025-05-11 09:45:16,902 - INFO - 11/01/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,902 - INFO -   - Demographics (page 152)
+2025-05-11 09:45:16,902 - INFO -   - Admission Information (page 152)
+2025-05-11 09:45:16,902 - INFO -   - Discharge Information (page 152)
+2025-05-11 09:45:16,902 - INFO -   - Visit Account Information (page 152)
+2025-05-11 09:45:16,902 - INFO -   - Coding Summary (page 153)
+2025-05-11 09:45:16,902 - INFO -     - Final Diagnoses (page 154)
+2025-05-11 09:45:16,902 - INFO -   - Visit Information (page 154)
+2025-05-11 09:45:16,902 - INFO -   - Auth/Cert Information (page 154)
+2025-05-11 09:45:16,902 - INFO -   - Home Care Visit (page 155)
+2025-05-11 09:45:16,902 - INFO -     - 11/1/2023 PT Home Visit (page 155)
+2025-05-11 09:45:16,902 - INFO -   - Clinical Notes (page 161)
+2025-05-11 09:45:16,902 - INFO -     - 11/01/2023 (page 162)
+2025-05-11 09:45:16,902 - INFO -   - Flowsheets (page 166)
+2025-05-11 09:45:16,902 - INFO -     - Remote Client Documentation Flowsheet (page 166)
+2025-05-11 09:45:16,902 - INFO -     - Vitals Reassessment (page 166)
+2025-05-11 09:45:16,902 - INFO -     - User Key (page 166)
+2025-05-11 09:45:16,902 - INFO -   - SmartForms (page 166)
+2025-05-11 09:45:16,902 - INFO - 10/27/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,902 - INFO -   - Demographics (page 169)
+2025-05-11 09:45:16,902 - INFO -   - Admission Information (page 169)
+2025-05-11 09:45:16,902 - INFO -   - Discharge Information (page 169)
+2025-05-11 09:45:16,903 - INFO -   - Visit Account Information (page 169)
+2025-05-11 09:45:16,903 - INFO -   - Coding Summary (page 170)
+2025-05-11 09:45:16,903 - INFO -     - Final Diagnoses (page 171)
+2025-05-11 09:45:16,903 - INFO -   - Visit Information (page 171)
+2025-05-11 09:45:16,903 - INFO -   - Auth/Cert Information (page 171)
+2025-05-11 09:45:16,903 - INFO -   - Home Care Visit (page 172)
+2025-05-11 09:45:16,903 - INFO -     - 10/27/2023 PT Home Visit (page 172)
+2025-05-11 09:45:16,903 - INFO -   - Clinical Notes (page 181)
+2025-05-11 09:45:16,903 - INFO -     - 10/27/2023 (page 181)
+2025-05-11 09:45:16,903 - INFO -   - Flowsheets (page 185)
+2025-05-11 09:45:16,903 - INFO -     - Encounter Vitals (page 185)
+2025-05-11 09:45:16,903 - INFO -     - Vitals Reassessment (page 186)
+2025-05-11 09:45:16,903 - INFO -     - User Key (page 186)
+2025-05-11 09:45:16,903 - INFO -   - SmartForms (page 186)
+2025-05-11 09:45:16,903 - INFO - 10/26/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,903 - INFO -   - Demographics (page 191)
+2025-05-11 09:45:16,903 - INFO -   - Admission Information (page 191)
+2025-05-11 09:45:16,903 - INFO -   - Discharge Information (page 191)
+2025-05-11 09:45:16,903 - INFO -   - Visit Account Information (page 191)
+2025-05-11 09:45:16,903 - INFO -   - Coding Summary (page 192)
+2025-05-11 09:45:16,903 - INFO -     - Final Diagnoses (page 193)
+2025-05-11 09:45:16,904 - INFO -   - Visit Information (page 193)
+2025-05-11 09:45:16,904 - INFO -   - Auth/Cert Information (page 193)
+2025-05-11 09:45:16,904 - INFO -   - Home Care Visit (page 194)
+2025-05-11 09:45:16,904 - INFO -     - 10/26/2023 SN Home Visit (page 194)
+2025-05-11 09:45:16,904 - INFO -   - Clinical Notes (page 205)
+2025-05-11 09:45:16,904 - INFO -     - 10/26/2023 (page 205)
+2025-05-11 09:45:16,904 - INFO -   - Flowsheets (page 209)
+2025-05-11 09:45:16,904 - INFO -     - Encounter Vitals (page 209)
+2025-05-11 09:45:16,904 - INFO -     - Lines/Drains/Airways (page 209)
+2025-05-11 09:45:16,904 - INFO -     - Remote Client Documentation Flowsheet (page 210)
+2025-05-11 09:45:16,904 - INFO -     - Vitals Reassessment (page 211)
+2025-05-11 09:45:16,904 - INFO -     - User Key (page 211)
+2025-05-11 09:45:16,904 - INFO -   - SmartForms (page 211)
+2025-05-11 09:45:16,904 - INFO -   - Documents (page 217)
+2025-05-11 09:45:16,904 - INFO -     - Photo Wound Home Health - Scan on 10/26/2023  9:48 AM: Wound 09/28/23 Laceration Left Heel (page 217)
+2025-05-11 09:45:16,904 - INFO -     - Photo Wound Home Health - Scan on 10/26/2023  9:48 AM: Incision 10/04/23 Surgical Incision Distal;Right Pretibial (page 218)
+2025-05-11 09:45:16,904 - INFO - 10/25/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,904 - INFO -   - Demographics (page 220)
+2025-05-11 09:45:16,904 - INFO -   - Admission Information (page 220)
+2025-05-11 09:45:16,904 - INFO -   - Discharge Information (page 220)
+2025-05-11 09:45:16,904 - INFO -   - Visit Account Information (page 220)
+2025-05-11 09:45:16,904 - INFO -   - Coding Summary (page 221)
+2025-05-11 09:45:16,905 - INFO -     - Final Diagnoses (page 222)
+2025-05-11 09:45:16,905 - INFO -   - Visit Information (page 222)
+2025-05-11 09:45:16,905 - INFO -   - Auth/Cert Information (page 222)
+2025-05-11 09:45:16,905 - INFO -   - Home Care Visit (page 223)
+2025-05-11 09:45:16,905 - INFO -     - 10/25/2023 PT Home Visit (page 223)
+2025-05-11 09:45:16,905 - INFO -   - Clinical Notes (page 232)
+2025-05-11 09:45:16,905 - INFO -     - 10/25/2023 (page 232)
+2025-05-11 09:45:16,905 - INFO -   - Flowsheets (page 236)
+2025-05-11 09:45:16,905 - INFO -     - Encounter Vitals (page 236)
+2025-05-11 09:45:16,905 - INFO -     - Vitals Reassessment (page 237)
+2025-05-11 09:45:16,905 - INFO -     - User Key (page 237)
+2025-05-11 09:45:16,905 - INFO -   - SmartForms (page 237)
+2025-05-11 09:45:16,905 - INFO - 10/20/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,905 - INFO -   - Demographics (page 242)
+2025-05-11 09:45:16,905 - INFO -   - Admission Information (page 242)
+2025-05-11 09:45:16,905 - INFO -   - Discharge Information (page 242)
+2025-05-11 09:45:16,905 - INFO -   - Visit Account Information (page 242)
+2025-05-11 09:45:16,905 - INFO -   - Coding Summary (page 243)
+2025-05-11 09:45:16,905 - INFO -     - Final Diagnoses (page 244)
+2025-05-11 09:45:16,905 - INFO -   - Visit Information (page 244)
+2025-05-11 09:45:16,905 - INFO -   - Auth/Cert Information (page 244)
+2025-05-11 09:45:16,906 - INFO -   - Home Care Visit (page 245)
+2025-05-11 09:45:16,906 - INFO -     - 10/20/2023 PT Home Visit (page 245)
+2025-05-11 09:45:16,906 - INFO -   - Clinical Notes (page 253)
+2025-05-11 09:45:16,906 - INFO -     - 10/20/2023 (page 253)
+2025-05-11 09:45:16,906 - INFO -   - Flowsheets (page 257)
+2025-05-11 09:45:16,906 - INFO -     - Encounter Vitals (page 257)
+2025-05-11 09:45:16,906 - INFO -     - Vitals Reassessment (page 257)
+2025-05-11 09:45:16,906 - INFO -     - User Key (page 257)
+2025-05-11 09:45:16,906 - INFO -   - SmartForms (page 257)
+2025-05-11 09:45:16,906 - INFO - 10/19/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,906 - INFO -   - Demographics (page 263)
+2025-05-11 09:45:16,906 - INFO -   - Admission Information (page 263)
+2025-05-11 09:45:16,906 - INFO -   - Discharge Information (page 263)
+2025-05-11 09:45:16,906 - INFO -   - Visit Account Information (page 263)
+2025-05-11 09:45:16,906 - INFO -   - Coding Summary (page 264)
+2025-05-11 09:45:16,906 - INFO -     - Final Diagnoses (page 265)
+2025-05-11 09:45:16,906 - INFO -   - Visit Information (page 265)
+2025-05-11 09:45:16,906 - INFO -   - Auth/Cert Information (page 265)
+2025-05-11 09:45:16,906 - INFO -   - Home Care Visit (page 266)
+2025-05-11 09:45:16,906 - INFO -     - 10/19/2023 SN Home Visit (page 266)
+2025-05-11 09:45:16,906 - INFO -   - Clinical Notes (page 277)
+2025-05-11 09:45:16,906 - INFO -     - 10/19/2023 (page 277)
+2025-05-11 09:45:16,907 - INFO -   - Flowsheets (page 281)
+2025-05-11 09:45:16,907 - INFO -     - Encounter Vitals (page 281)
+2025-05-11 09:45:16,907 - INFO -     - Remote Client Documentation Flowsheet (page 282)
+2025-05-11 09:45:16,907 - INFO -     - Vitals Reassessment (page 283)
+2025-05-11 09:45:16,907 - INFO -     - User Key (page 283)
+2025-05-11 09:45:16,907 - INFO -   - SmartForms (page 283)
+2025-05-11 09:45:16,907 - INFO -   - Documents (page 288)
+2025-05-11 09:45:16,907 - INFO -     - Photo Wound Home Health - Scan on 10/19/2023  1:12 PM (page 288)
+2025-05-11 09:45:16,907 - INFO -     - Photo Wound Home Health - Scan on 10/19/2023  1:17 PM (page 289)
+2025-05-11 09:45:16,907 - INFO - 10/18/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,907 - INFO -   - Demographics (page 291)
+2025-05-11 09:45:16,907 - INFO -   - Admission Information (page 291)
+2025-05-11 09:45:16,907 - INFO -   - Discharge Information (page 291)
+2025-05-11 09:45:16,907 - INFO -   - Visit Account Information (page 291)
+2025-05-11 09:45:16,907 - INFO -   - Coding Summary (page 292)
+2025-05-11 09:45:16,907 - INFO -     - Final Diagnoses (page 293)
+2025-05-11 09:45:16,907 - INFO -   - Visit Information (page 293)
+2025-05-11 09:45:16,907 - INFO -   - Auth/Cert Information (page 293)
+2025-05-11 09:45:16,907 - INFO -   - Home Care Visit (page 294)
+2025-05-11 09:45:16,907 - INFO -     - 10/18/2023 PT Home Visit (page 294)
+2025-05-11 09:45:16,907 - INFO -   - Clinical Notes (page 303)
+2025-05-11 09:45:16,907 - INFO -     - 10/18/2023 (page 303)
+2025-05-11 09:45:16,908 - INFO -   - Flowsheets (page 306)
+2025-05-11 09:45:16,908 - INFO -     - Encounter Vitals (page 306)
+2025-05-11 09:45:16,908 - INFO -     - Remote Client Documentation Flowsheet (page 307)
+2025-05-11 09:45:16,908 - INFO -     - Vitals Reassessment (page 307)
+2025-05-11 09:45:16,908 - INFO -     - User Key (page 307)
+2025-05-11 09:45:16,908 - INFO -   - SmartForms (page 307)
+2025-05-11 09:45:16,908 - INFO - 10/13/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,908 - INFO -   - Demographics (page 360)
+2025-05-11 09:45:16,908 - INFO -   - Admission Information (page 360)
+2025-05-11 09:45:16,908 - INFO -   - Discharge Information (page 360)
+2025-05-11 09:45:16,908 - INFO -   - Visit Account Information (page 360)
+2025-05-11 09:45:16,908 - INFO -   - Coding Summary (page 361)
+2025-05-11 09:45:16,908 - INFO -     - Final Diagnoses (page 362)
+2025-05-11 09:45:16,908 - INFO -   - Visit Information (page 362)
+2025-05-11 09:45:16,908 - INFO -   - Auth/Cert Information (page 362)
+2025-05-11 09:45:16,908 - INFO -   - Home Care Visit (page 363)
+2025-05-11 09:45:16,908 - INFO -     - 10/13/2023 OT Evaluation (page 363)
+2025-05-11 09:45:16,908 - INFO -   - Flowsheets (page 372)
+2025-05-11 09:45:16,908 - INFO -     - Remote Client Documentation Flowsheet (page 372)
+2025-05-11 09:45:16,908 - INFO -     - Vitals Reassessment (page 372)
+2025-05-11 09:45:16,908 - INFO -     - User Key (page 372)
+2025-05-11 09:45:16,908 - INFO -   - SmartForms (page 372)
+2025-05-11 09:45:16,909 - INFO - 10/12/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,909 - INFO -   - Demographics (page 383)
+2025-05-11 09:45:16,909 - INFO -   - Admission Information (page 383)
+2025-05-11 09:45:16,909 - INFO -   - Discharge Information (page 383)
+2025-05-11 09:45:16,909 - INFO -   - Visit Account Information (page 383)
+2025-05-11 09:45:16,909 - INFO -   - Coding Summary (page 384)
+2025-05-11 09:45:16,909 - INFO -     - Final Diagnoses (page 385)
+2025-05-11 09:45:16,909 - INFO -   - Visit Information (page 385)
+2025-05-11 09:45:16,909 - INFO -   - Auth/Cert Information (page 385)
+2025-05-11 09:45:16,909 - INFO -   - Home Care Visit (page 386)
+2025-05-11 09:45:16,909 - INFO -     - 10/12/2023 Telephone Encounter (page 386)
+2025-05-11 09:45:16,909 - INFO - 10/12/2023 - Appointment in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,909 - INFO -   - Visit Information (page 381)
+2025-05-11 09:45:16,909 - INFO - 10/11/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,909 - INFO -   - Demographics (page 387)
+2025-05-11 09:45:16,909 - INFO -   - Admission Information (page 387)
+2025-05-11 09:45:16,909 - INFO -   - Discharge Information (page 387)
+2025-05-11 09:45:16,909 - INFO -   - Visit Account Information (page 387)
+2025-05-11 09:45:16,909 - INFO -   - Coding Summary (page 388)
+2025-05-11 09:45:16,909 - INFO -     - Final Diagnoses (page 389)
+2025-05-11 09:45:16,909 - INFO -   - Visit Information (page 389)
+2025-05-11 09:45:16,909 - INFO -   - Auth/Cert Information (page 389)
+2025-05-11 09:45:16,910 - INFO -   - Home Care Visit (page 390)
+2025-05-11 09:45:16,910 - INFO -     - 10/11/2023 Telephone Encounter (page 390)
+2025-05-11 09:45:16,910 - INFO - 10/10/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,910 - INFO -   - Demographics (page 392)
+2025-05-11 09:45:16,910 - INFO -   - Admission Information (page 392)
+2025-05-11 09:45:16,910 - INFO -   - Discharge Information (page 392)
+2025-05-11 09:45:16,910 - INFO -   - Visit Account Information (page 392)
+2025-05-11 09:45:16,910 - INFO -   - Coding Summary (page 393)
+2025-05-11 09:45:16,910 - INFO -     - Final Diagnoses (page 394)
+2025-05-11 09:45:16,910 - INFO -   - Visit Information (page 394)
+2025-05-11 09:45:16,910 - INFO -   - Auth/Cert Information (page 394)
+2025-05-11 09:45:16,910 - INFO -   - Home Care Visit (page 395)
+2025-05-11 09:45:16,910 - INFO -     - 10/10/2023 PT Evaluation (page 395)
+2025-05-11 09:45:16,910 - INFO -   - Clinical Notes (page 406)
+2025-05-11 09:45:16,910 - INFO -     - 10/10/2023 (page 406)
+2025-05-11 09:45:16,910 - INFO -   - Flowsheets (page 410)
+2025-05-11 09:45:16,910 - INFO -     - Encounter Vitals (page 410)
+2025-05-11 09:45:16,910 - INFO -     - Vitals Reassessment (page 411)
+2025-05-11 09:45:16,910 - INFO -     - User Key (page 411)
+2025-05-11 09:45:16,910 - INFO -   - SmartForms (page 411)
+2025-05-11 09:45:16,910 - INFO - Referral: Auth/Cert:
+2025-05-11 09:45:16,910 - INFO -   - Referral Info (page 417)
+2025-05-11 09:45:16,911 - INFO - 10/08/2023 - Home Care Visit in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,911 - INFO -   - Demographics (page 419)
+2025-05-11 09:45:16,911 - INFO -   - Admission Information (page 419)
+2025-05-11 09:45:16,911 - INFO -   - Discharge Information (page 419)
+2025-05-11 09:45:16,911 - INFO -   - Visit Account Information (page 419)
+2025-05-11 09:45:16,912 - INFO -   - Coding Summary (page 420)
+2025-05-11 09:45:16,912 - INFO -     - Final Diagnoses (page 421)
+2025-05-11 09:45:16,912 - INFO -   - Visit Information (page 421)
+2025-05-11 09:45:16,912 - INFO -   - Auth/Cert Information (page 421)
+2025-05-11 09:45:16,912 - INFO -   - Home Care Visit (page 422)
+2025-05-11 09:45:16,912 - INFO -     - 10/8/2023 SN OASIS Start of Care (page 422)
+2025-05-11 09:45:16,912 - INFO -   - Clinical Notes (page 458)
+2025-05-11 09:45:16,912 - INFO -     - 10/08/2023 (page 458)
+2025-05-11 09:45:16,912 - INFO -   - Flowsheets (page 463)
+2025-05-11 09:45:16,913 - INFO -     - Remote Client Documentation Flowsheet (page 463)
+2025-05-11 09:45:16,913 - INFO -     - Vitals Reassessment (page 465)
+2025-05-11 09:45:16,913 - INFO -     - User Key (page 465)
+2025-05-11 09:45:16,913 - INFO -   - SmartForms (page 465)
+2025-05-11 09:45:16,913 - INFO - 10/07/2023 - Home Health Admission in WellSpan VNA Home Care York:
+2025-05-11 09:45:16,913 - INFO -   - Demographics (page 474)
+2025-05-11 09:45:16,913 - INFO -   - Admission Information (page 474)
+2025-05-11 09:45:16,913 - INFO -   - Discharge Information (page 474)
+2025-05-11 09:45:16,913 - INFO -   - Visit Account Information (page 474)
+2025-05-11 09:45:16,913 - INFO -   - Coding Summary (page 475)
+2025-05-11 09:45:16,913 - INFO -     - Final Diagnoses (page 476)
+2025-05-11 09:45:16,913 - INFO -   - Visit Information (page 476)
+2025-05-11 09:45:16,913 - INFO -   - Auth/Cert Information (page 477)
+2025-05-11 09:45:16,913 - INFO -   - Documents (page 478)
+2025-05-11 09:45:16,913 - INFO -     - Home Care - Scan on 11/21/2023 10:04 AM: DC INSTRUCTIONS (page 478)
+2025-05-11 09:45:16,913 - INFO -     - Home Care - Scan on 12/7/2023  2:50 PM: DC INSTRUCTIONS (page 479)
+2025-05-11 09:45:16,913 - INFO - 10/07/2023 - Penley,David (10/7/23) (HOME HEALTH):
+2025-05-11 09:45:16,913 - INFO -   - Home Care Orders (page 480)
+2025-05-11 09:45:16,914 - INFO -     - Home Health Face to Face Attestation by Martin, Christine V, RN on 10/7/2023 10:03 AM (page 480)
+2025-05-11 09:45:16,914 - INFO -     - Plan of Care by Lee, Diana L on 10/8/2023  5:45 AM (page 481)
+2025-05-11 09:45:16,914 - INFO -   - Episode Care Plan (page 494)
+2025-05-11 09:45:16,914 - INFO -   - Plans of Care (page 506)
+2025-05-11 09:45:16,914 - INFO -     - Home Health Plan of Care 10/8/23 (page 506)
+2025-05-11 09:45:16,914 - INFO - No bookmarks found.
+2025-05-11 09:59:18,833 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 09:59:18,881 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 10:04:49,479 - INFO - Processing text to remove headers and footers...
+2025-05-11 10:04:49,522 - INFO - Total headers removed: 0
+2025-05-11 10:04:49,522 - INFO - Total footers removed: 0
+2025-05-11 10:04:49,522 - INFO - Cleaned text length: 2247079 chars, first 500 chars: '[PAGE_BREAK]
+        ar                   WellSpan VNA Home Care YorkPenley, David               
+                             540 S. George St.  MRN: 008671927, DOB: 8/27/1970, Legal Sex: M
+                             York PA 17401-2732 Visit date: 11/29/2023              
+     'WELLSPAN'                                                                     
+
+        HEALTH                                                                      
+                     11/29/2023 - Appointment in Well'...
+2025-05-11 10:04:49,523 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
+2025-05-11 10:05:25,667 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 10:05:25,679 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 10:28:49,361 - INFO - Processing text to remove headers and footers...
+2025-05-11 10:28:49,405 - INFO - Total headers removed: 0
+2025-05-11 10:28:49,405 - INFO - Total footers removed: 0
+2025-05-11 10:28:49,405 - INFO - Cleaned text length: 2247079 chars, first 500 chars: '[PAGE_BREAK]
+        ar                   WellSpan VNA Home Care YorkPenley, David               
+                             540 S. George St.  MRN: 008671927, DOB: 8/27/1970, Legal Sex: M
+                             York PA 17401-2732 Visit date: 11/29/2023              
+     'WELLSPAN'                                                                     
+
+        HEALTH                                                                      
+                     11/29/2023 - Appointment in Well'...
+2025-05-11 10:28:49,406 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
+2025-05-11 10:29:27,910 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 10:29:27,922 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 10:39:19,878 - INFO - Processing text to remove headers and footers...
+2025-05-11 10:39:19,921 - INFO - Total headers removed: 0
+2025-05-11 10:39:19,922 - INFO - Total footers removed: 0
+2025-05-11 10:39:19,922 - INFO - Cleaned text length: 2247079 chars, first 500 chars: '[PAGE_BREAK]
+        ar                   WellSpan VNA Home Care YorkPenley, David               
+                             540 S. George St.  MRN: 008671927, DOB: 8/27/1970, Legal Sex: M
+                             York PA 17401-2732 Visit date: 11/29/2023              
+     'WELLSPAN'                                                                     
+
+        HEALTH                                                                      
+                     11/29/2023 - Appointment in Well'...
+2025-05-11 10:39:19,922 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
+2025-05-11 10:40:00,762 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 10:40:00,777 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 10:43:00,937 - INFO - Processing text to remove headers and footers...
+2025-05-11 10:43:00,978 - INFO - Total headers removed: 0
+2025-05-11 10:43:00,978 - INFO - Total footers removed: 0
+2025-05-11 10:43:00,978 - INFO - Cleaned text length: 2247079 chars, first 500 chars: '[PAGE_BREAK]
+        ar                   WellSpan VNA Home Care YorkPenley, David               
+                             540 S. George St.  MRN: 008671927, DOB: 8/27/1970, Legal Sex: M
+                             York PA 17401-2732 Visit date: 11/29/2023              
+     'WELLSPAN'                                                                     
+
+        HEALTH                                                                      
+                     11/29/2023 - Appointment in Well'...
+2025-05-11 10:43:00,978 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
+2025-05-11 10:43:36,970 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 10:43:36,982 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-11 10:46:56,988 - INFO - Processing text to remove headers and footers...
+2025-05-11 10:46:57,024 - INFO - Total headers removed: 0
+2025-05-11 10:46:57,024 - INFO - Total footers removed: 0
+2025-05-11 10:46:57,024 - INFO - Cleaned text length: 2247079 chars, first 500 chars: '[PAGE_BREAK]
+        ar                   WellSpan VNA Home Care YorkPenley, David               
+                             540 S. George St.  MRN: 008671927, DOB: 8/27/1970, Legal Sex: M
+                             York PA 17401-2732 Visit date: 11/29/2023              
+     'WELLSPAN'                                                                     
+
+        HEALTH                                                                      
+                     11/29/2023 - Appointment in Well'...
+2025-05-11 10:46:57,024 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
+2025-05-11 10:47:31,740 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-11 10:47:31,756 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-12 09:43:51,195 - INFO - Processing text to remove headers and footers...
+2025-05-12 09:43:51,246 - INFO - Total headers removed: 0
+2025-05-12 09:43:51,246 - INFO - Total footers removed: 0
+2025-05-12 09:43:51,246 - INFO - Cleaned text length: 2247079 chars, first 500 chars: '[PAGE_BREAK]
+        ar                   WellSpan VNA Home Care YorkPenley, David               
+                             540 S. George St.  MRN: 008671927, DOB: 8/27/1970, Legal Sex: M
+                             York PA 17401-2732 Visit date: 11/29/2023              
+     'WELLSPAN'                                                                     
+
+        HEALTH                                                                      
+                     11/29/2023 - Appointment in Well'...
+2025-05-12 09:43:51,246 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
+2025-05-12 09:44:28,240 - INFO - Processing PDF: C:\Users\esupp\Documents\Projects\python\ai\process-medical-records\data\records\Penley\Penley - WellSpan VNA Home Care.pdf
+2025-05-12 09:44:28,257 - INFO - Found 22 top-level (level 1) bookmarks
+2025-05-15 08:24:55,918 - INFO - Processing text to remove headers and footers...
+2025-05-15 08:24:55,962 - INFO - Total headers removed: 0
+2025-05-15 08:24:55,962 - INFO - Total footers removed: 0
+2025-05-15 08:24:55,962 - INFO - Cleaned text length: 2422446 chars, first 500 chars: '[PAGE_BREAK]
+                                  11/29/2023 - Appointment in WellSpan VNA Home Care York                                          
+    Visit Information                                                                                                             
+       Appointment Information                                                                                                    
+           PT HOME VISIT                                                           Canceled  '...
+2025-05-15 08:24:55,962 - INFO - Document info extracted: {'Facility': None, 'Patient': None, 'MRN': None, 'DOB': None, 'Sex': None, 'AccountNumber': None, 'AdmitDate': None, 'DischargeDate': None}
